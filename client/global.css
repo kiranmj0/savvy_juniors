@@ -6,6 +6,7 @@
 @tailwind utilities;
 
 @layer base {
+
   /**
    * Tailwind CSS theme
    * tailwind.config.ts expects the following color variables to be expressed as HSL values.
@@ -117,4 +118,20 @@
     overflow-x: auto;
     white-space: pre;
   }
+}
+
+/* Footer background image */
+.footer-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/public/home_image.jpg');
+  /* image path relative to public folder */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  /* 10% opacity */
+  z-index: 0;
+  /* behind content */
 }

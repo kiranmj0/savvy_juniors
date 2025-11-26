@@ -5,22 +5,27 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-primary text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <footer className="footer-bg relative text-white bg-primary">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <img
-                src="/navvy_image.png"
-                alt="Savvy Juniors"
-                className="h-28 w-28 object-contain"
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none';
-                  const nextEl = e.currentTarget.nextElementSibling as HTMLElement;
-                  if (nextEl) nextEl.style.display = 'flex';
-                }}
-              />
+            <div className="flex items-center gap-3 mb-4 -mt-12">
+              <div className="relative group">
+                {/* Strong outline/shadow behind logo */}
+                <img
+                  src="/navvy_image.png"
+                  alt="Savvy Juniors"
+                  className="relative h-36 w-36 object-contain filter drop-shadow-[0_0_20px_rgba(255,255,255,0.8)] transform transition-transform duration-500 group-hover:scale-110"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                    const nextEl = e.currentTarget.nextElementSibling as HTMLElement;
+                    if (nextEl) nextEl.style.display = 'flex';
+                  }}
+                />
+              </div>
+
+              {/* Fallback text logo */}
               <div className="hidden items-center gap-1">
                 <span className="text-2xl font-bold text-white">S</span>
                 <span className="text-2xl font-bold text-accent">a</span>
@@ -28,6 +33,7 @@ export default function Footer() {
                 <span className="text-2xl font-bold text-accent ml-1">Juniors</span>
               </div>
             </div>
+
             <p className="text-sm text-white/80">
               Nurturing young minds with research-led, child-centered early childhood education.
             </p>

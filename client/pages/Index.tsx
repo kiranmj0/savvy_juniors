@@ -217,7 +217,7 @@ export default function Home() {
                   to="/contact"
                   className="bg-accent hover:bg-orange-600 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105 hover:shadow-xl text-center group relative overflow-hidden"
                 >
-                  <span className="relative z-10">Book Your Visit</span>
+                  <span className="relative z-10 text-white">Book Your Visit</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
                 </Link>
                 <a
@@ -430,7 +430,7 @@ export default function Home() {
                 className="bg-accent hover:bg-accent/90 text-primary px-8 py-3 rounded-lg font-bold transition-all duration-300 inline-block hover:scale-105 hover:shadow-xl group relative overflow-hidden animate-fade-in-up"
                 style={{ animationDelay: '1s' }}
               >
-                <span className="relative z-10">Get In Touch</span>
+                <span className="relative z-10 text-white">Get In Touch</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
               </Link>
             </div>

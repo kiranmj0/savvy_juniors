@@ -89,14 +89,14 @@ export default function About() {
               </ul>
             </div>
 
-            <div className="mt-12">
+            {/* <div className="mt-12">
               <Link
                 to="/"
                 className="inline-block bg-accent hover:bg-orange-600 text-gray-900 px-8 py-3 rounded-lg font-bold transition-all transform hover:scale-105"
               >
                 Return to Home
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
