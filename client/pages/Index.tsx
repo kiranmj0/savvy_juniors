@@ -413,15 +413,24 @@ export default function Home() {
               </p>
               <div className="space-y-4 mb-8">
                 <div className="flex items-center gap-3 animate-slide-in-left" style={{ animationDelay: '0.4s' }}>
-                  <span className="w-3 h-3 bg-accent rounded-full animate-pulse-gentle"></span>
+                  {/* Phone Icon */}
+                  <span className="text-accent text-xl">
+                    <i className="fas fa-phone-alt"></i>
+                  </span>
                   <span className="hover:text-accent transition-colors cursor-pointer">Phone: +971 58 580 0346</span>
                 </div>
                 <div className="flex items-center gap-3 animate-slide-in-left" style={{ animationDelay: '0.6s' }}>
-                  <span className="w-3 h-3 bg-accent rounded-full animate-pulse-gentle"></span>
+                  {/* Email Icon */}
+                  <span className="text-accent text-xl">
+                    <i className="fas fa-envelope"></i>
+                  </span>
                   <span className="hover:text-accent transition-colors cursor-pointer">Email: contact@savvyjuniors.ae</span>
                 </div>
                 <div className="flex items-center gap-3 animate-slide-in-left" style={{ animationDelay: '0.8s' }}>
-                  <span className="w-3 h-3 bg-accent rounded-full animate-pulse-gentle"></span>
+                  {/* Location Icon */}
+                  <span className="text-accent text-xl">
+                    <i className="fas fa-map-marker-alt"></i>
+                  </span>
                   <span className="hover:text-accent transition-colors cursor-pointer">Address: Grandiose, Dubai Sports City, Dubai, UAE</span>
                 </div>
               </div>
@@ -453,6 +462,7 @@ export default function Home() {
         </div>
       </section>
 
+
       {/* Admissions Section */}
       <section className="min-h-screen flex items-center bg-gradient-to-br from-white to-accent/5 relative overflow-hidden">
         <div className="absolute top-10 left-10 w-20 h-20 bg-primary/5 rounded-full animate-float-1"></div>
@@ -463,8 +473,7 @@ export default function Home() {
             <div
               id="admission-image"
               data-animate
-              className={`transition-all duration-1000 transform ${isVisible['admission-image'] ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'
-                }`}
+              className={`transition-all duration-1000 transform ${isVisible['admission-image'] ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'}`}
             >
               <div className="relative group">
                 <div className="absolute -inset-3 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -479,8 +488,7 @@ export default function Home() {
             <div
               id="admission-content"
               data-animate
-              className={`transition-all duration-1000 transform ${isVisible['admission-content'] ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'
-                }`}
+              className={`transition-all duration-1000 transform ${isVisible['admission-content'] ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'}`}
             >
               <h2 className="text-4xl font-bold text-gray-900 mb-6 animate-slide-in-right">
                 <span className="bg-gradient-to-r from-gray-900 to-primary bg-clip-text text-transparent">Admission Onboarding</span>
@@ -489,16 +497,26 @@ export default function Home() {
                 Join the Savvy Juniors family and give your child the best start in life. Our admission process is designed to ensure the best fit for your family and your child's unique needs.
               </p>
               <div className="space-y-3 mb-8">
+                {/* Using Custom Icons Instead of Bullets */}
                 <div className="flex items-center gap-3 animate-slide-in-right group cursor-pointer" style={{ animationDelay: '0.4s' }}>
-                  <span className="w-3 h-3 bg-primary rounded-full animate-pulse-gentle group-hover:scale-125 transition-transform"></span>
+                  {/* Tour Icon */}
+                  <span className="text-primary text-xl">
+                    <i className="fas fa-map-signs"></i> {/* Tour Icon */}
+                  </span>
                   <span className="text-gray-700 group-hover:text-primary transition-colors">Schedule a tour of our facilities</span>
                 </div>
                 <div className="flex items-center gap-3 animate-slide-in-right group cursor-pointer" style={{ animationDelay: '0.6s' }}>
-                  <span className="w-3 h-3 bg-primary rounded-full animate-pulse-gentle group-hover:scale-125 transition-transform"></span>
+                  {/* Application Form Icon */}
+                  <span className="text-primary text-xl">
+                    <i className="fas fa-file-alt"></i> {/* Form Icon */}
+                  </span>
                   <span className="text-gray-700 group-hover:text-primary transition-colors">Complete the application form</span>
                 </div>
                 <div className="flex items-center gap-3 animate-slide-in-right group cursor-pointer" style={{ animationDelay: '0.8s' }}>
-                  <span className="w-3 h-3 bg-primary rounded-full animate-pulse-gentle group-hover:scale-125 transition-transform"></span>
+                  {/* Meeting Icon */}
+                  <span className="text-primary text-xl">
+                    <i className="fas fa-users"></i> {/* Meeting Icon */}
+                  </span>
                   <span className="text-gray-700 group-hover:text-primary transition-colors">Meet with our educational team</span>
                 </div>
               </div>
@@ -514,6 +532,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
 
       {/* Services Section */}
       {/* <section className="py-20 bg-primary text-white">

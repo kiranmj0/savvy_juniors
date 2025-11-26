@@ -31,25 +31,34 @@ const Admissions = () => {
                 </p>
                 <div className="bg-primary/10 p-6 rounded-lg">
                   <h3 className="font-semibold text-gray-900 mb-3">Admission Steps:</h3>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-primary rounded-full"></span>
-                      Schedule a tour of our facilities
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-primary rounded-full"></span>
-                      Complete the application form
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-primary rounded-full"></span>
-                      Meet with our educational team
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-primary rounded-full"></span>
-                      Receive admission confirmation
-                    </li>
-                  </ul>
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-4">
+                      <span className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center">
+                        <i className="fas fa-calendar-alt"></i>
+                      </span>
+                      <span>Schedule a tour of our facilities</span>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <span className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center">
+                        <i className="fas fa-pencil-alt"></i>
+                      </span>
+                      <span>Complete the application form</span>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <span className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center">
+                        <i className="fas fa-users"></i>
+                      </span>
+                      <span>Meet with our educational team</span>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <span className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center">
+                        <i className="fas fa-check-circle"></i>
+                      </span>
+                      <span>Receive admission confirmation</span>
+                    </div>
+                  </div>
                 </div>
+
                 <div className="mt-8">
                   <a
                     href="/contact"
