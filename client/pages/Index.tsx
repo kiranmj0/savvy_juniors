@@ -230,7 +230,7 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="flex gap-8 animate-fade-in-up" style={{ animationDelay: '1s' }}>
+              {/* <div className="flex gap-8 animate-fade-in-up" style={{ animationDelay: '1s' }}>
                 <div className="text-center group cursor-pointer">
                   <p className="text-3xl font-bold text-primary group-hover:scale-110 transition-transform duration-300 counter-animate">4k</p>
                   <p className="text-gray-600 text-sm group-hover:text-primary transition-colors">Video Class</p>
@@ -243,7 +243,7 @@ export default function Home() {
                   <p className="text-3xl font-bold text-primary group-hover:scale-110 transition-transform duration-300 counter-animate" style={{ animationDelay: '0.4s' }}>20+</p>
                   <p className="text-gray-600 text-sm group-hover:text-primary transition-colors">Complete Graduation</p>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div className="relative animate-slide-in-right">
