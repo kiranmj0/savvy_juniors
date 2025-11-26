@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [logoFailed, setLogoFailed] = useState(false);
+  const location = useLocation();
 
   const navItems = [
     { label: "Home", href: "/" },
@@ -44,7 +45,11 @@ export default function Header() {
               <Link
                 key={item.href}
                 to={item.href}
-                className="text-gray-700 hover:text-primary transition-colors text-sm font-medium"
+                className={`transition-colors text-sm font-medium ${
+                  location.pathname === item.href
+                    ? "text-primary border-b-2 border-primary pb-1"
+                    : "text-gray-700 hover:text-primary"
+                }`}
               >
                 {item.label}
               </Link>
@@ -82,7 +87,11 @@ export default function Header() {
               <Link
                 key={item.href}
                 to={item.href}
-                className="block py-2 text-gray-700 hover:text-primary transition-colors text-sm font-medium"
+                className={`block py-2 transition-colors text-sm font-medium ${
+                  location.pathname === item.href
+                    ? "text-primary bg-primary/10 px-2 rounded"
+                    : "text-gray-700 hover:text-primary"
+                }`}
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}

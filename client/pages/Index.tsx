@@ -189,7 +189,7 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center bg-gradient-to-br from-blue-50 to-white relative overflow-hidden">
+      <section className="min-h-screen flex items-center bg-gradient-to-br from-blue-50 to-white relative overflow-hidden pt-20 md:pt-0">
         {/* Floating Elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="floating-shape w-20 h-20 bg-primary/10 rounded-full absolute top-40 left-10 animate-float-1"></div>
