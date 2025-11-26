@@ -11,7 +11,7 @@ const Contact = () => {
     subject: "",
     message: "",
   });
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [statusMessage, setStatusMessage] = useState('');
@@ -20,7 +20,7 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
-    
+
     try {
       const response = await fetch('/api/enquiry', {
         method: 'POST',
@@ -29,9 +29,9 @@ const Contact = () => {
         },
         body: JSON.stringify(formData),
       });
-      
+
       const result = await response.json();
-      
+
       if (result.success) {
         setSubmitStatus('success');
         setStatusMessage('Thank you! Your enquiry has been submitted successfully. We will contact you soon.');
@@ -114,7 +114,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="bg-accent/10 p-6 rounded-lg">
+                {/* <div className="bg-accent/10 p-6 rounded-lg">
                   <h3 className="font-semibold text-gray-900 mb-3">Join Newsletter</h3>
                   <form className="flex gap-2">
                     <input
@@ -129,7 +129,7 @@ const Contact = () => {
                       Subscribe
                     </button>
                   </form>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -141,7 +141,7 @@ const Contact = () => {
                 className="w-full h-64 object-cover rounded-lg shadow-lg"
               /> */}
 
-              <div>
+              {/* <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">Enquiry Form</h2>
 
                 {submitStatus !== 'idle' && (
@@ -234,7 +234,7 @@ const Contact = () => {
                     )}
                   </button>
                 </form>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
