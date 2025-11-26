@@ -192,7 +192,7 @@ export default function Home() {
       <section className="min-h-screen flex items-center bg-gradient-to-br from-blue-50 to-white relative overflow-hidden">
         {/* Floating Elements */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="floating-shape w-20 h-20 bg-primary/10 rounded-full absolute top-20 left-10 animate-float-1"></div>
+          <div className="floating-shape w-20 h-20 bg-primary/10 rounded-full absolute top-40 left-10 animate-float-1"></div>
           <div className="floating-shape w-16 h-16 bg-accent/10 rounded-full absolute top-40 right-20 animate-float-2"></div>
           <div className="floating-shape w-12 h-12 bg-primary/5 rounded-full absolute bottom-40 left-1/4 animate-float-3"></div>
           <div className="floating-shape w-24 h-24 bg-accent/5 rounded-full absolute bottom-20 right-1/3 animate-float-4"></div>

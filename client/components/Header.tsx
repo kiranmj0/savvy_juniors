@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [logoFailed, setLogoFailed] = useState(false);
 
   const navItems = [
     { label: "Home", href: "/" },
@@ -15,25 +16,26 @@ export default function Header() {
 
   return (
     <header className="fixed w-full top-0 z-50 bg-white shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto p-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
+
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <img
-              src="/navvy_image.png"
-              alt="Savvy Juniors"
-              className="h-28 w-28 p-2 object-contain"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none';
-                e.currentTarget.nextElementSibling.style.display = 'flex';
-              }}
-            />
-            <div className="hidden items-center gap-1">
-              <span className="text-2xl font-bold text-primary">S</span>
-              <span className="text-2xl font-bold text-accent">a</span>
-              <span className="text-2xl font-bold text-primary">vvy</span>
-              <span className="text-2xl font-bold text-accent ml-1">Juniors</span>
-            </div>
+            {!logoFailed ? (
+              <img
+                src="/navvy_image.png"
+                alt="Savvy Juniors"
+                className="h-28 w-28 p-2 object-contain"
+                onError={() => setLogoFailed(true)}
+              />
+            ) : (
+              <div className="flex items-center gap-1">
+                <span className="text-2xl font-bold text-primary">S</span>
+                <span className="text-2xl font-bold text-accent">a</span>
+                <span className="text-2xl font-bold text-primary">vvy</span>
+                <span className="text-2xl font-bold text-accent ml-1">Juniors</span>
+              </div>
+            )}
           </Link>
 
           {/* Desktop Navigation */}
