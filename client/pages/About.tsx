@@ -17,10 +17,15 @@ export default function About() {
             <ArrowLeft className="w-4 h-4" /> Back to home
           </Link>
 
-          <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl p-12">
+          <div className="bg-gradient-to-br from-blue-50 to-orange-50 rounded-2xl p-12">
             <div className="text-center mb-8">
               <h1 className="text-5xl font-extrabold text-gray-900 mb-6">
-                About <span className="text-primary">Savvy Juniors</span>
+                About   <span className="inline-block animate-text-reveal-delay">
+                  <span className="text-primary font-extrabold">S</span>
+                  <span className="text-orange-500 font-extrabold">a</span>
+                  <span className="text-primary font-extrabold">vvy</span>
+                  <span className="text-orange-500 font-extrabold ml-1">Juniors</span>
+                </span>
               </h1>
             </div>
 
@@ -34,14 +39,10 @@ export default function About() {
               </div>
               <div className="text-left space-y-6 text-gray-600 leading-relaxed">
                 <p>
-                  Savvy Juniors Early Childhood Centre opened early 2026,
-                  bringing a fresh, research-led, and child-centred early years
-                  experience to families in the UAE. We welcome children from 45
-                  days to 5 years, offering a warm, nurturing environment where
-                  every child is valued, understood, and celebrated.
+                  Savvy Juniors Early Childhood Centre opens early 2026, bringing a fresh, research-led, and child-centred early years experience to families in the UAE. We welcome children from 45 days to 5 years, offering a warm, nurturing environment where every child is valued, understood, and celebrated.
                 </p>
                 <p>
-                  Our approach blends the British curriculum alongside Montessori principles, enriched by the latest insights in early childhood neuroscience.
+                  Our approach blends the British curriculum alongside Montessori approach, enriched by the latest insights in early childhood neuroscience. This ensures that children experience learning that is child-led, purposeful, and deeply connected to the way young brains naturally grow.
                 </p>
               </div>
             </div>
@@ -51,34 +52,34 @@ export default function About() {
                 At Savvy Juniors, childhood is honoured. Curiosity is encouraged. Independence is nurtured. And every milestone—big or small—is treasured.
               </p>
               <p>
-                Savvy Juniors nursery space was designed to be a safe and nurturing environment where children feel loved, respected, and supported both physically and emotionally. We have transformed our spaces into sanctuaries filled with abundant natural light, educational play equipment, and supplies.
+                Savvy Juniors nursery space was designed to be a safe and nurturing environment where children feel loved, respected, and supported both physically and emotionally. We have transformed our spaces into sanctuaries filled with abundant natural light, educational play equipment and supplies.
               </p>
             </div>
 
             <div className="mt-12 p-8 bg-white rounded-xl border-l-4 border-primary">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                Our Learning Philosophy
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                Our Learning Philosophy:
               </h2>
-              <ul className="text-left space-y-4 text-gray-600">
-                <li className="flex gap-3 items-center">
-                  <span className="text-primary text-xl"><i className="fas fa-book"></i></span>
-                  <span>
-                    <strong>Child-led discovery:</strong> We follow children's interests while intentionally guiding learning...
-                  </span>
-                </li>
-                <li className="flex gap-3 items-center">
-                  <span className="text-primary text-xl"><i className="fas fa-brain"></i></span>
-                  <span>
-                    <strong>Science-backed practice:</strong> Our programmes are thoughtfully designed to optimise early childhood development.
-                  </span>
-                </li>
-                <li className="flex gap-3 items-center">
-                  <span className="text-primary text-xl"><i className="fas fa-heart"></i></span>
-                  <span>
-                    <strong>Holistic growth:</strong> We support academic readiness, emotional intelligence, physical development, and social confidence.
-                  </span>
-                </li>
-              </ul>
+              <div className="text-left space-y-6 text-gray-600">
+                <div className="flex gap-3 items-start">
+                  <span className="text-primary text-xl mt-1"><i className="fas fa-child"></i></span>
+                  <div>
+                    <strong className="text-gray-900">Child-led discovery:</strong> We follow children's interests while intentionally guiding learning through the EYFS framework and Reggio principles.
+                  </div>
+                </div>
+                <div className="flex gap-3 items-start">
+                  <span className="text-primary text-xl mt-1"><i className="fas fa-brain"></i></span>
+                  <div>
+                    <strong className="text-gray-900">Science-backed practice:</strong> With up to 90% of brain connections forming before age five, our programmes are thoughtfully designed to optimise this powerful period of development.
+                  </div>
+                </div>
+                <div className="flex gap-3 items-start">
+                  <span className="text-primary text-xl mt-1"><i className="fas fa-heart"></i></span>
+                  <div>
+                    <strong className="text-gray-900">Holistic growth:</strong> We support academic readiness, emotional intelligence, physical development, and social confidence—ensuring children thrive in every way.
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* <div className="mt-12 text-center">

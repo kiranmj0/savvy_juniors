@@ -26,15 +26,15 @@ export default function Header() {
               <img
                 src="/navvy_image.png"
                 alt="Savvy Juniors"
-                className="h-28 w-28 p-2 object-contain"
+                className="h-40 w-40 p-2 object-contain"
                 onError={() => setLogoFailed(true)}
               />
             ) : (
               <div className="flex items-center gap-1">
-                <span className="text-2xl font-bold text-primary">S</span>
-                <span className="text-2xl font-bold text-accent">a</span>
-                <span className="text-2xl font-bold text-primary">vvy</span>
-                <span className="text-2xl font-bold text-accent ml-1">Juniors</span>
+                <span className="text-2xl font-bold text-blue-600">S</span>
+                <span className="text-2xl font-bold text-orange-500">a</span>
+                <span className="text-2xl font-bold text-blue-600">vvy</span>
+                <span className="text-2xl font-bold text-orange-500 ml-1">Juniors</span>
               </div>
             )}
           </Link>
@@ -45,11 +45,10 @@ export default function Header() {
               <Link
                 key={item.href}
                 to={item.href}
-                className={`transition-colors text-sm font-medium ${
-                  location.pathname === item.href
-                    ? "text-primary border-b-2 border-primary pb-1"
-                    : "text-gray-700 hover:text-primary"
-                }`}
+                className={`transition-colors text-sm font-medium ${location.pathname === item.href
+                  ? "text-primary border-b-2 border-primary pb-1"
+                  : "text-gray-700 hover:text-primary"
+                  }`}
               >
                 {item.label}
               </Link>
@@ -87,11 +86,10 @@ export default function Header() {
               <Link
                 key={item.href}
                 to={item.href}
-                className={`block py-2 transition-colors text-sm font-medium ${
-                  location.pathname === item.href
-                    ? "text-primary bg-primary/10 px-2 rounded"
-                    : "text-gray-700 hover:text-primary"
-                }`}
+                className={`block py-2 transition-colors text-sm font-medium ${location.pathname === item.href
+                  ? "text-primary bg-primary/10 px-2 rounded"
+                  : "text-gray-700 hover:text-primary"
+                  }`}
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}

@@ -205,7 +205,12 @@ export default function Home() {
                 <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                   <span className="inline-block animate-text-reveal">Book your play and stay visit at</span>
                   <br />
-                  <span className="text-primary inline-block animate-text-reveal-delay bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Savvy Juniors</span>
+                  <span className="inline-block animate-text-reveal-delay">
+                    <span className="text-primary font-extrabold">S</span>
+                    <span className="text-orange-500 font-extrabold">a</span>
+                    <span className="text-primary font-extrabold">vvy</span>
+                    <span className="text-orange-500 font-extrabold ml-1">Juniors</span>
+                  </span>
                 </h1>
                 <p className="text-lg text-gray-600 max-w-xl leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
                   Join us for <span className="font-semibold text-primary animate-pulse-gentle">A Very British Tea Party</span> - 10am every weekday
@@ -217,7 +222,7 @@ export default function Home() {
                   to="/contact"
                   className="bg-accent hover:bg-orange-600 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105 hover:shadow-xl text-center group relative overflow-hidden"
                 >
-                  <span className="relative z-10 text-white">Book Your Visit</span>
+                  <span className="relative z-10 text-white">Join Us for Tour</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
                 </Link>
                 <a
@@ -296,28 +301,25 @@ export default function Home() {
                   ABOUT US
                 </p>
                 <h2 className="text-4xl font-bold mb-6 animate-slide-in-left">
-                  <span className="bg-gradient-to-r from-white to-accent bg-clip-text text-transparent">The Savvy Story</span>
+                  <span className="bg-gradient-to-r from-yellow-400 via-pink-400 to-purple-500 bg-clip-text text-[white] drop-shadow-2xl font-extrabold">The Savvy Story</span>
                 </h2>
                 {/* <h2 className="text-4xl font-bold text-gray-900 mb-6 animate-slide-in-right" style={{ animationDelay: '0.4s' }}>
                   <span className="bg-gradient-to-r from-gray-900 to-primary bg-clip-text text-transparent">The Savvy Story</span>
                 </h2> */}
               </div>
 
-              <div className="text-white/80 space-y-4 text-gray-600 leading-relaxed">
-                <p className="animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-                  Savvy Juniors Early Childhood Centre opened early 2026, bringing a fresh, research-led, and child-centred early years experience to families in the UAE. We welcome children from 45 days to 5 years, offering a warm, nurturing environment where every child is valued, understood, and celebrated.
+              <div className="space-y-4 leading-relaxed">
+                <p className="text-white text-lg font-medium animate-fade-in-up drop-shadow-sm" style={{ animationDelay: '0.6s' }}>
+                  Savvy Juniors Early Childhood Centre opens early 2026, bringing a fresh, research-led, and child-centred early years experience to families in the UAE. We welcome children from 45 days to 5 years in a warm, nurturing environment.
                 </p>
-                <p className="animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
-                  Our approach blends the British curriculum alongside Montessori approach, enriched by the latest insights in early childhood neuroscience. This ensures that children experience learning that is child-led, purposeful, and deeply connected to the way young brains naturally grow.
-                </p>
-                <p className="font-medium text-white/80 animate-fade-in-up" style={{ animationDelay: '1s' }}>
+                <p className="text-white/95 text-base font-semibold animate-fade-in-up drop-shadow-sm" style={{ animationDelay: '0.8s' }}>
                   At Savvy Juniors, childhood is honoured. Curiosity is encouraged. Independence is nurtured. And every milestone—big or small—is treasured.
                 </p>
               </div>
 
               <Link
                 to="/about"
-                className="text-white/80 hover:text-black/80 font-semibold flex items-center gap-2 transition-all duration-300 inline-flex group animate-fade-in-up hover:gap-4"
+                className="text-white hover:text-orange-300 font-semibold flex items-center gap-2 transition-all duration-300 inline-flex group animate-fade-in-up hover:gap-4 drop-shadow-sm"
                 style={{ animationDelay: '1.2s' }}
               >
                 More about us <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -405,10 +407,10 @@ export default function Home() {
               className={`transition-all duration-1000 transform ${isVisible['contact-content'] ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'
                 }`}
             >
-              <h2 className="text-4xl font-bold mb-6 animate-slide-in-left">
-                <span className="bg-gradient-to-r from-white to-accent bg-clip-text text-transparent">Contact/Concierge</span>
+              <h2 className="text-4xl font-bold mb-6 animate-slide-in-left text-white">
+                Contact/Concierge
               </h2>
-              <p className="text-white/80 leading-relaxed mb-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+              <p className="text-white text-lg font-medium animate-fade-in-up drop-shadow-sm mb-4" style={{ animationDelay: '0.2s' }}>
                 Ready to give your child the best start in life? Get in touch with our team to learn more about our programs, schedule a visit, or begin the enrollment process.
               </p>
               <div className="space-y-4 mb-8">

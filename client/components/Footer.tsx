@@ -9,32 +9,31 @@ export default function Footer() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
-          <div>
-            <div className="flex items-center gap-3 mb-4 -mt-12">
-              <div className="relative group">
-                {/* Strong outline/shadow behind logo */}
+          <div className="md:col-span-2">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="relative group bg-white rounded-full p-3 shadow-lg">
                 <img
                   src="/navvy_image.png"
                   alt="Savvy Juniors"
-                  className="relative h-36 w-36 object-contain filter drop-shadow-[0_0_20px_rgba(255,255,255,0.8)] transform transition-transform duration-500 group-hover:scale-110"
+                  className="relative h-20 w-20 object-contain transform transition-transform duration-500 group-hover:scale-110"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
                     const nextEl = e.currentTarget.nextElementSibling as HTMLElement;
                     if (nextEl) nextEl.style.display = 'flex';
                   }}
                 />
-              </div>
 
-              {/* Fallback text logo */}
-              <div className="hidden items-center gap-1">
-                <span className="text-2xl font-bold text-white">S</span>
-                <span className="text-2xl font-bold text-accent">a</span>
-                <span className="text-2xl font-bold text-white">vvy</span>
-                <span className="text-2xl font-bold text-accent ml-1">Juniors</span>
+                {/* Fallback text logo */}
+                <div className="hidden items-center gap-1">
+                  <span className="text-2xl font-bold text-blue-600">S</span>
+                  <span className="text-2xl font-bold text-orange-500">a</span>
+                  <span className="text-2xl font-bold text-blue-600">vvy</span>
+                  <span className="text-2xl font-bold text-orange-500 ml-1">Juniors</span>
+                </div>
               </div>
             </div>
 
-            <p className="text-sm text-white/80">
+            <p className="text-sm text-white/80 max-w-md">
               Nurturing young minds with research-led, child-centered early childhood education.
             </p>
           </div>
@@ -42,7 +41,7 @@ export default function Footer() {
           {/* Useful Links */}
           <div>
             <h3 className="font-bold text-lg mb-4">Useful Links</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-3 text-sm">
               <li>
                 <Link to="/" className="hover:text-accent transition-colors">
                   Home
@@ -71,8 +70,35 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Recent Posts */}
+          {/* Contact Info */}
           <div>
+            <h3 className="font-bold text-lg mb-4">Contact Info</h3>
+            <div className="space-y-3 text-sm">
+              <div className="flex items-start gap-3">
+                <Phone className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-white/80">+971 58 580 0346</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-white/80">
+                    Grandiose, Dubai Sports City, Dubai, UAE
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <Mail className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-white/80">contact@savvyjuniors.ae</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Recent Posts */}
+          {/* <div>
             <h3 className="font-bold text-lg mb-4">Recent Posts</h3>
             <ul className="space-y-2 text-sm">
               <li>
@@ -96,10 +122,10 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Newsletter */}
-          <div>
+          {/* <div>
             <h3 className="font-bold text-lg mb-4">Newsletter</h3>
             <p className="text-sm text-white/80 mb-4">
               Subscribe to our newsletter for updates on events and new blog posts.
@@ -117,55 +143,30 @@ export default function Footer() {
                 Subscribe
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
 
-        {/* Contact Info */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 pb-12 border-b border-white/20">
-          <div className="flex items-start gap-3">
-            <Phone className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
-            <div>
-              <p className="text-sm font-medium">Phone</p>
-              <p className="text-sm text-white/80">+971 58 580 0346</p>
+        <div className="border-t border-white/20 pt-8">
+          {/* Social Links & Copyright */}
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="flex gap-4">
+              <a href="#" className="hover:text-accent transition-colors">
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a href="#" className="hover:text-accent transition-colors">
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a href="#" className="hover:text-accent transition-colors">
+                <Twitter className="w-5 h-5" />
+              </a>
+              <a href="#" className="hover:text-accent transition-colors">
+                <Linkedin className="w-5 h-5" />
+              </a>
             </div>
+            <p className="text-sm text-white/80">
+              Savvy Juniors © {currentYear} All Rights Reserved
+            </p>
           </div>
-          <div className="flex items-start gap-3">
-            <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
-            <div>
-              <p className="text-sm font-medium">Address</p>
-              <p className="text-sm text-white/80">
-                Grandiose, Dubai Sports City, Dubai, UAE
-              </p>
-            </div>
-          </div>
-          <div className="flex items-start gap-3">
-            <Mail className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
-            <div>
-              <p className="text-sm font-medium">Email</p>
-              <p className="text-sm text-white/80">contact@savvyjuniors.ae</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Social Links & Copyright */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex gap-4">
-            <a href="#" className="hover:text-accent transition-colors">
-              <Facebook className="w-5 h-5" />
-            </a>
-            <a href="#" className="hover:text-accent transition-colors">
-              <Instagram className="w-5 h-5" />
-            </a>
-            <a href="#" className="hover:text-accent transition-colors">
-              <Twitter className="w-5 h-5" />
-            </a>
-            <a href="#" className="hover:text-accent transition-colors">
-              <Linkedin className="w-5 h-5" />
-            </a>
-          </div>
-          <p className="text-sm text-white/80">
-            Savvy Juniors © {currentYear} All Rights Reserved
-          </p>
         </div>
       </div>
     </footer>
