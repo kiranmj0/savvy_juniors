@@ -212,9 +212,9 @@ export default function Home() {
                     <span className="text-orange-500 font-extrabold ml-1">Juniors</span>
                   </span>
                 </h1>
-                <p className="text-lg text-gray-600 max-w-xl leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+                {/* <p className="text-lg text-gray-600 max-w-xl leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
                   Join us for <span className="font-semibold text-primary animate-pulse-gentle">A Very British Tea Party</span> - 10am every weekday
-                </p>
+                </p> */}
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
