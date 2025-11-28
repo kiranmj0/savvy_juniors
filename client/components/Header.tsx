@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronRight } from "lucide-react";
+import { getAssetPath } from "@/lib/assets";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +45,7 @@ export default function Header() {
               <Link to="/" className="flex items-center gap-3 group">
                 {!logoFailed ? (
                   <img
-                    src="/navvy_image.png"
+                    src={getAssetPath("navvy_image.png")}
                     alt="Savvy Juniors"
                     className={`p-1 md:p-2 object-contain transition-all duration-300 group-hover:scale-105 ${scrolled ? 'h-24 w-24 md:h-32 md:w-32' : 'h-28 w-28 md:h-40 md:w-40'
                       }`}

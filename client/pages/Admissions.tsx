@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { getAssetPath } from "@/lib/assets";
 
 const Admissions = () => {
   return (
@@ -71,7 +72,7 @@ const Admissions = () => {
             </div>
             <div>
               <img
-                src="/admissions-hero.png"
+                src={getAssetPath("admissions-hero.png")}
                 alt="Admissions at Savvy Juniors"
                 className="w-full h-80 object-cover rounded-lg shadow-lg"
               />

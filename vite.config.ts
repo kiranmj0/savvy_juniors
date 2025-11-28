@@ -5,7 +5,8 @@ import { createServer } from "./server";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: './',server: {
+  base: '/',
+  server: {
     host: "::",
     port: 8080,
     fs: {
@@ -15,6 +16,7 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     outDir: "dist/spa",
+    assetsDir: "assets",
   },
   plugins: [react(), expressPlugin()],
   resolve: {

@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { getAssetPath } from "@/lib/assets";
 import { ArrowLeft } from "lucide-react";
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-50">
       <Header />
 
       <div className="pt-12">
@@ -17,7 +18,7 @@ export default function About() {
             <ArrowLeft className="w-4 h-4" /> Back to home
           </Link>
 
-          <div className="bg-gradient-to-br from-blue-50 to-orange-50 rounded-2xl p-6 sm:p-8 lg:p-12">
+          <div className="bg-white rounded-3xl p-6 sm:p-8 lg:p-12 shadow-xl border border-gray-100">
             <div className="text-center mb-6">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4">
                 About <span className="inline-block animate-text-reveal-delay">
@@ -29,34 +30,31 @@ export default function About() {
               </h1>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center mb-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch mb-8">
               <div className="order-2 lg:order-1 px-4 sm:px-0">
                 <img
-                  src="/testimonials-bg.png"
+                  src={getAssetPath("testimonials-bg.png")}
                   alt="About Savvy Juniors"
-                  className="w-full h-64 sm:h-72 lg:h-80 object-cover rounded-lg shadow-lg"
+                  className="w-full h-80 sm:h-96 lg:h-full object-cover rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105"
                 />
               </div>
-              <div className="order-1 lg:order-2 text-left space-y-4 lg:space-y-6 text-gray-600 leading-relaxed px-4 sm:px-0">
+              <div className="order-1 lg:order-2 text-left space-y-5 lg:space-y-6 text-gray-700 leading-relaxed px-4 sm:px-0 flex flex-col justify-center">
                 <p>
                   Savvy Juniors Early Childhood Centre opens early 2026, bringing a fresh, research-led, and child-centred early years experience to families in the UAE. We welcome children from 45 days to 5 years, offering a warm, nurturing environment where every child is valued, understood, and celebrated.
                 </p>
                 <p>
                   Our approach blends the British curriculum alongside Montessori approach, enriched by the latest insights in early childhood neuroscience. This ensures that children experience learning that is child-led, purposeful, and deeply connected to the way young brains naturally grow.
                 </p>
+                <p>
+                  At Savvy Juniors, childhood is honoured. Curiosity is encouraged. Independence is nurtured. And every milestone—big or small—is treasured.
+                </p>
+                <p>
+                  Savvy Juniors nursery space was designed to be a safe and nurturing environment where children feel loved, respected, and supported both physically and emotionally. We have transformed our spaces into sanctuaries filled with abundant natural light, educational play equipment and supplies.
+                </p>
               </div>
             </div>
 
-            <div className="text-center space-y-4 lg:space-y-6 text-gray-600 leading-relaxed mb-6">
-              <p className="text-xl font-medium text-gray-900">
-                At Savvy Juniors, childhood is honoured. Curiosity is encouraged. Independence is nurtured. And every milestone—big or small—is treasured.
-              </p>
-              <p>
-                Savvy Juniors nursery space was designed to be a safe and nurturing environment where children feel loved, respected, and supported both physically and emotionally. We have transformed our spaces into sanctuaries filled with abundant natural light, educational play equipment and supplies.
-              </p>
-            </div>
-
-            <div className="mt-8 lg:mt-12 p-4 sm:p-6 lg:p-8 bg-white rounded-xl border-l-4 border-primary shadow-sm">
+            <div className="mt-8 lg:mt-12 p-4 sm:p-6 lg:p-8 bg-white rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 border border-gray-100">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">
                 Our Learning Philosophy:
               </h2>

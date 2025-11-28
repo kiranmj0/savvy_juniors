@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { getAssetPath } from "@/lib/assets";
 import {
   Users,
   BookOpen,
@@ -258,7 +259,7 @@ export default function Home() {
               <div className="relative h-96 bg-white rounded-full overflow-hidden flex items-center justify-center shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 group">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img
-                  src="/hero-banner.png"
+                  src={getAssetPath("hero-banner.png")}
                   alt="Kids learning"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:rotate-2"
                 />
@@ -284,7 +285,7 @@ export default function Home() {
               <div className="absolute -inset-4 bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl animate-pulse-gentle"></div>
               <div className="absolute top-4 right-4 w-4 h-4 bg-accent rounded-full animate-ping"></div>
               <img
-                src="/newsletter-banner.jpg"
+                src={getAssetPath("newsletter-banner.jpg")}
                 alt="Savvy Juniors Early Childhood Centre"
                 className="relative w-full rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1"
               />
@@ -381,7 +382,7 @@ export default function Home() {
               <div className="relative group">
                 <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img
-                  src="/programs-overview.png"
+                  src={getAssetPath("programs-overview.png")}
                   alt="Our Programs"
                   className="relative w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1"
                 />
@@ -457,7 +458,7 @@ export default function Home() {
               <div className="relative group">
                 <div className="absolute -inset-4 bg-gradient-to-r from-accent/30 to-white/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img
-                  src="/contact-us-hero.png"
+                  src={getAssetPath("contact-us-hero.png")}
                   alt="Contact Us"
                   className="relative w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1"
                 />
@@ -484,7 +485,7 @@ export default function Home() {
                 <div className="absolute -inset-3 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="absolute top-4 left-4 w-4 h-4 bg-primary rounded-full animate-ping"></div>
                 <img
-                  src="/admissions-hero.png"
+                  src={getAssetPath("admissions-hero.png")}
                   alt="Admission Onboarding"
                   className="relative w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1"
                 />

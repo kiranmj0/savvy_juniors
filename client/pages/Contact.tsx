@@ -159,11 +159,7 @@ const Contact = () => {
 
             {/* Right Side Image and Enquiry Form */}
             <div className="space-y-8">
-              {/* <img 
-                src="/contact_us_image.jpg" 
-                alt="Contact Us" 
-                className="w-full h-64 object-cover rounded-lg shadow-lg"
-              /> */}
+              {/* Image placeholder - add contact image if needed */}
 
               {/* <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">Enquiry Form</h2>

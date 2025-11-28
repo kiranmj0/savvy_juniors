@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { getAssetPath } from "@/lib/assets";
 
 const Programs = () => {
   return (
@@ -29,7 +30,7 @@ const Programs = () => {
             </div>
             <div className="lg:order-first animate-slide-in-left" style={{ animationDelay: "0.1s" }}>
               <img 
-                src="/services-overview.png" 
+                src={getAssetPath("services-overview.png")} 
                 alt="Infant Program" 
                 className="w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
@@ -48,7 +49,7 @@ const Programs = () => {
             </div>
             <div className="animate-slide-in-right" style={{ animationDelay: "0.4s" }}>
               <img 
-                src="/gallery-showcase.png" 
+                src={getAssetPath("gallery-showcase.png")} 
                 alt="Toddler Program" 
                 className="w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
@@ -67,7 +68,7 @@ const Programs = () => {
             </div>
             <div className="lg:order-first animate-slide-in-left" style={{ animationDelay: "0.6s" }}>
               <img 
-                src="/events-calendar.png" 
+                src={getAssetPath("events-calendar.png")} 
                 alt="Early Learners Program" 
                 className="w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
@@ -86,7 +87,7 @@ const Programs = () => {
             </div>
             <div className="animate-slide-in-right" style={{ animationDelay: "0.8s" }}>
               <img 
-                src="/staff-team.png" 
+                src={getAssetPath("staff-team.png")} 
                 alt="Foundation Stage FS1" 
                 className="w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
@@ -105,7 +106,7 @@ const Programs = () => {
             </div>
             <div className="lg:order-first animate-slide-in-left" style={{ animationDelay: "1.0s" }}>
               <img 
-                src="/facilities-tour.png" 
+                src={getAssetPath("facilities-tour.png")} 
                 alt="Foundation Stage FS2" 
                 className="w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
