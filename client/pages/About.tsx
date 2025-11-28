@@ -8,19 +8,19 @@ export default function About() {
     <div className="min-h-screen bg-white">
       <Header />
 
-      <div className="pt-16">
-        <div>
+      <div className="pt-12">
+        <div className="w-full">
           <Link
             to="/"
-            className="text-primary hover:text-primary/80 font-semibold flex items-center gap-2 mb-8 transition-colors"
+            className="text-primary hover:text-primary/80 font-semibold flex items-center gap-2 mb-6 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" /> Back to home
           </Link>
 
-          <div className="bg-gradient-to-br from-blue-50 to-orange-50 rounded-2xl p-12">
-            <div className="text-center mb-8">
-              <h1 className="text-5xl font-extrabold text-gray-900 mb-6">
-                About   <span className="inline-block animate-text-reveal-delay">
+          <div className="bg-gradient-to-br from-blue-50 to-orange-50 rounded-2xl p-6 sm:p-8 lg:p-12">
+            <div className="text-center mb-6">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4">
+                About <span className="inline-block animate-text-reveal-delay">
                   <span className="text-primary font-extrabold">S</span>
                   <span className="text-orange-500 font-extrabold">a</span>
                   <span className="text-primary font-extrabold">vvy</span>
@@ -29,15 +29,15 @@ export default function About() {
               </h1>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-8">
-              <div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center mb-6">
+              <div className="order-2 lg:order-1 px-4 sm:px-0">
                 <img
-                  src="/about_us_image.jpg"
+                  src="/testimonials-bg.png"
                   alt="About Savvy Juniors"
-                  className="w-full h-auto object-cover rounded-lg shadow-lg"
+                  className="w-full h-64 sm:h-72 lg:h-80 object-cover rounded-lg shadow-lg"
                 />
               </div>
-              <div className="text-left space-y-6 text-gray-600 leading-relaxed">
+              <div className="order-1 lg:order-2 text-left space-y-4 lg:space-y-6 text-gray-600 leading-relaxed px-4 sm:px-0">
                 <p>
                   Savvy Juniors Early Childhood Centre opens early 2026, bringing a fresh, research-led, and child-centred early years experience to families in the UAE. We welcome children from 45 days to 5 years, offering a warm, nurturing environment where every child is valued, understood, and celebrated.
                 </p>
@@ -47,7 +47,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="text-center space-y-6 text-gray-600 leading-relaxed mb-8">
+            <div className="text-center space-y-4 lg:space-y-6 text-gray-600 leading-relaxed mb-6">
               <p className="text-xl font-medium text-gray-900">
                 At Savvy Juniors, childhood is honoured. Curiosity is encouraged. Independence is nurtured. And every milestone—big or small—is treasured.
               </p>
@@ -56,7 +56,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="mt-12 p-8 bg-white rounded-xl border-l-4 border-primary">
+            <div className="mt-8 lg:mt-12 p-4 sm:p-6 lg:p-8 bg-white rounded-xl border-l-4 border-primary shadow-sm">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">
                 Our Learning Philosophy:
               </h2>

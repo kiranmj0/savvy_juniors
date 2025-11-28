@@ -40,62 +40,74 @@ export default function Footer() {
 
           {/* Useful Links */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Useful Links</h3>
-            <ul className="space-y-3 text-sm">
-              <li>
-                <Link to="/" className="hover:text-accent transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className="hover:text-accent transition-colors">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/programs" className="hover:text-accent transition-colors">
-                  Programs
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="hover:text-accent transition-colors">
-                  Contact Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/admissions" className="hover:text-accent transition-colors">
-                  Admissions
-                </Link>
-              </li>
-            </ul>
+            <h3 className="font-bold text-lg mb-4 text-white">Useful Links</h3>
+            <div className="space-y-1">
+              <Link
+                to="/"
+                className="block py-1 px-2 transition-colors text-white hover:text-black font-medium text-sm"
+              >
+                Home
+              </Link>
+              <Link
+                to="/about"
+                className="block py-1 px-2 transition-colors text-white hover:text-black font-medium text-sm"
+              >
+                About Us
+              </Link>
+              <Link
+                to="/programs"
+                className="block py-1 px-2 transition-colors text-white hover:text-black font-medium text-sm"
+              >
+                Programs
+              </Link>
+              <Link
+                to="/contact"
+                className="block py-1 px-2 transition-colors text-white hover:text-black font-medium text-sm"
+              >
+                Contact Us
+              </Link>
+              <Link
+                to="/admissions"
+                className="block py-1 px-2 transition-colors text-white hover:text-black font-medium text-sm"
+              >
+                Admissions
+              </Link>
+            </div>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Contact Info</h3>
-            <div className="space-y-3 text-sm">
-              <div className="flex items-start gap-3">
-                <Phone className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="text-white/80">+971 58 580 0346</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="text-white/80">
-                    Grandiose, Dubai Sports City, Dubai, UAE
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <Mail className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="text-white/80">contact@savvyjuniors.ae</p>
-                </div>
-              </div>
+            <h3 className="font-bold text-lg mb-4 text-white">Contact Info</h3>
+            <div className="space-y-2">
+              {/* Phone */}
+              <a
+                href="tel:+971585800346"
+                className="flex items-center gap-2 py-1 px-2 transition-colors text-white hover:text-black font-medium text-sm"
+              >
+                <Phone className="w-4 h-4 flex-shrink-0" />
+                <span>+971 58 580 0346</span>
+              </a>
+              {/* Location */}
+              <a
+                href="https://maps.google.com/?q=Grandiose,Dubai+Sports+City,Dubai,UAE"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-2 py-1 px-2 transition-colors text-white hover:text-black font-medium text-sm"
+              >
+                <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                <span className="leading-tight">Grandiose, Dubai Sports City, Dubai, UAE</span>
+              </a>
+              {/* Email */}
+              <a
+                href="mailto:contact@savvyjuniors.ae"
+                className="flex items-center gap-2 py-1 px-2 transition-colors text-white hover:text-black font-medium text-sm"
+              >
+                <Mail className="w-4 h-4 flex-shrink-0" />
+                <span className="break-all">contact@savvyjuniors.ae</span>
+              </a>
             </div>
           </div>
+
 
           {/* Recent Posts */}
           {/* <div>

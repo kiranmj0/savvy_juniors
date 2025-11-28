@@ -29,7 +29,7 @@ const Programs = () => {
             </div>
             <div className="lg:order-first animate-slide-in-left" style={{ animationDelay: "0.1s" }}>
               <img 
-                src="/programs_image.jpg" 
+                src="/services-overview.png" 
                 alt="Infant Program" 
                 className="w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
@@ -48,7 +48,7 @@ const Programs = () => {
             </div>
             <div className="animate-slide-in-right" style={{ animationDelay: "0.4s" }}>
               <img 
-                src="/programs_image.jpg" 
+                src="/gallery-showcase.png" 
                 alt="Toddler Program" 
                 className="w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
@@ -67,7 +67,7 @@ const Programs = () => {
             </div>
             <div className="lg:order-first animate-slide-in-left" style={{ animationDelay: "0.6s" }}>
               <img 
-                src="/programs_image.jpg" 
+                src="/events-calendar.png" 
                 alt="Early Learners Program" 
                 className="w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
@@ -86,7 +86,7 @@ const Programs = () => {
             </div>
             <div className="animate-slide-in-right" style={{ animationDelay: "0.8s" }}>
               <img 
-                src="/programs_image.jpg" 
+                src="/staff-team.png" 
                 alt="Foundation Stage FS1" 
                 className="w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
@@ -105,7 +105,7 @@ const Programs = () => {
             </div>
             <div className="lg:order-first animate-slide-in-left" style={{ animationDelay: "1.0s" }}>
               <img 
-                src="/programs_image.jpg" 
+                src="/facilities-tour.png" 
                 alt="Foundation Stage FS2" 
                 className="w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />

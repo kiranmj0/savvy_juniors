@@ -71,7 +71,7 @@ const Admissions = () => {
             </div>
             <div>
               <img
-                src="/admission_image.jpg"
+                src="/admissions-hero.png"
                 alt="Admissions at Savvy Juniors"
                 className="w-full h-80 object-cover rounded-lg shadow-lg"
               />
