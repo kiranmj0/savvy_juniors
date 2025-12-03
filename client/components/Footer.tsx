@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <footer className="footer-bg relative text-white bg-primary">
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="relative z-10 max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div className="md:col-span-1 lg:col-span-2">
@@ -17,6 +17,8 @@ export default function Footer() {
                   src={getAssetPath("navvy_image.png")}
                   alt="Savvy Juniors"
                   className="relative h-20 w-20 object-contain transform transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
+                  decoding="async"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
                     const nextEl = e.currentTarget.nextElementSibling as HTMLElement;
@@ -45,31 +47,31 @@ export default function Footer() {
             <div className="space-y-1">
               <Link
                 to="/"
-                className="block py-1 px-2 transition-colors text-white hover:text-black font-medium text-sm"
+                className="block py-1 px-2 transition-all text-white hover:font-bold text-sm"
               >
                 Home
               </Link>
               <Link
                 to="/about"
-                className="block py-1 px-2 transition-colors text-white hover:text-black font-medium text-sm"
+                className="block py-1 px-2 transition-all text-white hover:font-bold text-sm"
               >
                 About Us
               </Link>
               <Link
                 to="/programs"
-                className="block py-1 px-2 transition-colors text-white hover:text-black font-medium text-sm"
+                className="block py-1 px-2 transition-all text-white hover:font-bold text-sm"
               >
                 Programs
               </Link>
               <Link
                 to="/contact"
-                className="block py-1 px-2 transition-colors text-white hover:text-black font-medium text-sm"
+                className="block py-1 px-2 transition-all text-white hover:font-bold text-sm"
               >
                 Contact Us
               </Link>
               <Link
                 to="/admissions"
-                className="block py-1 px-2 transition-colors text-white hover:text-black font-medium text-sm"
+                className="block py-1 px-2 transition-all text-white hover:font-bold text-sm"
               >
                 Admissions
               </Link>
@@ -83,7 +85,7 @@ export default function Footer() {
               {/* Phone */}
               <a
                 href="tel:+971585800346"
-                className="flex items-center gap-2 py-1 transition-colors text-white hover:text-black font-medium text-sm"
+                className="flex items-center gap-2 py-1 transition-all text-white hover:font-bold text-sm"
               >
                 <Phone className="w-4 h-4 flex-shrink-0" />
                 <span className="text-xs sm:text-sm">+971 58 580 0346</span>
@@ -93,7 +95,7 @@ export default function Footer() {
                 href="https://maps.google.com/?q=Grandiose,Dubai+Sports+City,Dubai,UAE"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-start gap-2 py-1 transition-colors text-white hover:text-black font-medium text-sm"
+                className="flex items-start gap-2 py-1 transition-all text-white hover:font-bold text-sm"
               >
                 <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
                 <span className="text-xs sm:text-sm leading-tight">Grandiose, Dubai Sports City, Dubai, UAE</span>
@@ -101,7 +103,7 @@ export default function Footer() {
               {/* Email */}
               <a
                 href="mailto:contact@savvyjuniors.ae"
-                className="flex items-center gap-2 py-1 transition-colors text-white hover:text-black font-medium text-sm"
+                className="flex items-center gap-2 py-1 transition-all text-white hover:font-bold text-sm"
               >
                 <Mail className="w-4 h-4 flex-shrink-0" />
                 <span className="text-xs sm:text-sm break-all">contact@savvyjuniors.ae</span>

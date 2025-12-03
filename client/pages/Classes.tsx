@@ -42,7 +42,7 @@ export default function Classes() {
       <Header />
 
       <div className="pt-32 pb-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
             to="/"
             className="text-primary hover:text-primary/80 font-semibold flex items-center gap-2 mb-8 transition-colors"

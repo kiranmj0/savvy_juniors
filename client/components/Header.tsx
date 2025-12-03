@@ -35,7 +35,7 @@ export default function Header() {
         ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200/50'
         : 'bg-white shadow-sm'
         }`}>
-        <div className="max-w-7xl mx-auto p-4 sm:px-6 lg:px-8">
+        <div className="max-w-9xl mx-auto p-4 sm:px-6 lg:px-8">
           <div className={`flex items-center justify-between transition-all duration-300 ${scrolled ? 'h-14' : 'h-16'
             }`}>
 
@@ -49,6 +49,8 @@ export default function Header() {
                     alt="Savvy Juniors"
                     className={`p-1 md:p-2 object-contain transition-all duration-300 group-hover:scale-105 ${scrolled ? 'h-24 w-24 md:h-32 md:w-32' : 'h-28 w-28 md:h-40 md:w-40'
                       }`}
+                    loading="eager"
+                    decoding="async"
                     onError={() => setLogoFailed(true)}
                   />
                 ) : (

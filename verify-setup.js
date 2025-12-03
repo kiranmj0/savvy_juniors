@@ -13,10 +13,10 @@ const requiredImages = [
   'services-overview.png',
   'gallery-showcase.png',
   'events-calendar.png',
-  'staff-team.png',
+  'staff-team.jpg',
   'facilities-tour.png',
   'navvy_image.png',
-  'favicon.ico'
+  'favicon.ico',
 ];
 
 console.log('Checking for required images...\n');

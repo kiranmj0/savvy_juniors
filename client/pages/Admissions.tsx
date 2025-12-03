@@ -8,10 +8,10 @@ const Admissions = () => {
       <Header />
 
       <div className="pt-32 pb-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Admission Onboarding
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-gray-900 to-primary bg-clip-text text-transparent">Admission Onboarding</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Join the Savvy Juniors family and give your child the best start in life

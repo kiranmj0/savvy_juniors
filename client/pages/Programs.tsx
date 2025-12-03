@@ -6,12 +6,12 @@ const Programs = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white to-gray-50">
       <Header />
-      
+
       <div className="pt-32 pb-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in-up">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Our Programs
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-gray-900 to-primary bg-clip-text text-transparent">Our Programs</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Age-appropriate programs designed to nurture development at every stage
@@ -29,9 +29,9 @@ const Programs = () => {
               </p>
             </div>
             <div className="lg:order-first animate-slide-in-left" style={{ animationDelay: "0.1s" }}>
-              <img 
-                src={getAssetPath("services-overview.png")} 
-                alt="Infant Program" 
+              <img
+                src={getAssetPath("services-overview.png")}
+                alt="Infant Program"
                 className="w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
             </div>
@@ -48,9 +48,9 @@ const Programs = () => {
               </p>
             </div>
             <div className="animate-slide-in-right" style={{ animationDelay: "0.4s" }}>
-              <img 
-                src={getAssetPath("gallery-showcase.png")} 
-                alt="Toddler Program" 
+              <img
+                src={getAssetPath("gallery-showcase.png")}
+                alt="Toddler Program"
                 className="w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
             </div>
@@ -67,9 +67,9 @@ const Programs = () => {
               </p>
             </div>
             <div className="lg:order-first animate-slide-in-left" style={{ animationDelay: "0.6s" }}>
-              <img 
-                src={getAssetPath("events-calendar.png")} 
-                alt="Early Learners Program" 
+              <img
+                src={getAssetPath("events-calendar.png")}
+                alt="Early Learners Program"
                 className="w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
             </div>
@@ -86,9 +86,9 @@ const Programs = () => {
               </p>
             </div>
             <div className="animate-slide-in-right" style={{ animationDelay: "0.8s" }}>
-              <img 
-                src={getAssetPath("staff-team.png")} 
-                alt="Foundation Stage FS1" 
+              <img
+                src={getAssetPath("staff-team.jpg")}
+                alt="Foundation Stage FS1"
                 className="w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
             </div>
@@ -105,9 +105,9 @@ const Programs = () => {
               </p>
             </div>
             <div className="lg:order-first animate-slide-in-left" style={{ animationDelay: "1.0s" }}>
-              <img 
-                src={getAssetPath("facilities-tour.png")} 
-                alt="Foundation Stage FS2" 
+              <img
+                src={getAssetPath("facilities-tour.png")}
+                alt="Foundation Stage FS2"
                 className="w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
             </div>
@@ -116,7 +116,7 @@ const Programs = () => {
       </div>
 
       <Footer />
-      
+
       <style>{`
         @keyframes fade-in-up {
           from {
