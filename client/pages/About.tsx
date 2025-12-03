@@ -35,7 +35,7 @@ export default function About() {
                 <img
                   src={getAssetPath("testimonials-bg.png")}
                   alt="About Savvy Juniors"
-                  className="w-full h-80 sm:h-96 lg:h-full object-cover rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105"
+                  className="w-full h-48 sm:h-56 md:h-72 lg:h-full object-cover rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105"
                 />
               </div>
               <div className="order-1 lg:order-2 text-left space-y-5 lg:space-y-6 text-gray-700 leading-relaxed px-4 sm:px-0 flex flex-col justify-center">

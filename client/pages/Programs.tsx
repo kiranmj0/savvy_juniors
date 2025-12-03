@@ -8,7 +8,7 @@ const Programs = () => {
       <Header />
 
       <div className="pt-32 pb-16">
-        <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl lg:max-w-none mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in-up">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               <span className="bg-gradient-to-r from-gray-900 to-primary bg-clip-text text-transparent">Our Programs</span>
@@ -32,7 +32,7 @@ const Programs = () => {
               <img
                 src={getAssetPath("services-overview.png")}
                 alt="Infant Program"
-                className="w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
+                className="w-full h-48 sm:h-56 md:h-72 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
             </div>
           </div>
@@ -51,7 +51,7 @@ const Programs = () => {
               <img
                 src={getAssetPath("gallery-showcase.png")}
                 alt="Toddler Program"
-                className="w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
+                className="w-full h-48 sm:h-56 md:h-72 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
             </div>
           </div>
@@ -70,7 +70,7 @@ const Programs = () => {
               <img
                 src={getAssetPath("events-calendar.png")}
                 alt="Early Learners Program"
-                className="w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
+                className="w-full h-48 sm:h-56 md:h-72 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
             </div>
           </div>
@@ -89,7 +89,7 @@ const Programs = () => {
               <img
                 src={getAssetPath("staff-team.jpg")}
                 alt="Foundation Stage FS1"
-                className="w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
+                className="w-full h-48 sm:h-56 md:h-72 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
             </div>
           </div>
@@ -108,7 +108,7 @@ const Programs = () => {
               <img
                 src={getAssetPath("facilities-tour.png")}
                 alt="Foundation Stage FS2"
-                className="w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
+                className="w-full h-48 sm:h-56 md:h-72 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
             </div>
           </div>

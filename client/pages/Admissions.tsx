@@ -8,7 +8,7 @@ const Admissions = () => {
       <Header />
 
       <div className="pt-32 pb-16">
-        <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl lg:max-w-none mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               <span className="bg-gradient-to-r from-gray-900 to-primary bg-clip-text text-transparent">Admission Onboarding</span>
@@ -74,7 +74,7 @@ const Admissions = () => {
               <img
                 src={getAssetPath("admissions-hero.png")}
                 alt="Admissions at Savvy Juniors"
-                className="w-full h-80 object-cover rounded-lg shadow-lg"
+                className="w-full h-48 sm:h-56 md:h-72 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg"
               />
             </div>
           </div>

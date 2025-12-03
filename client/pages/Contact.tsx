@@ -131,7 +131,7 @@ This enquiry was sent via the Savvy Juniors website contact form.`;
       <Header />
 
       <div className="pt-24 pb-8">
-        <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl lg:max-w-none mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h1 className="text-3xl md:text-4xl font-bold mb-2">
               <span className="bg-gradient-to-r from-gray-900 to-primary bg-clip-text text-transparent">Contact/Concierge</span>

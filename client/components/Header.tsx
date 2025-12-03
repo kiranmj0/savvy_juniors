@@ -35,7 +35,7 @@ export default function Header() {
         ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200/50'
         : 'bg-white shadow-sm'
         }`}>
-        <div className="max-w-9xl mx-auto p-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl lg:max-w-none mx-auto p-4 sm:px-6 lg:px-8">
           <div className={`flex items-center justify-between transition-all duration-300 ${scrolled ? 'h-14' : 'h-16'
             }`}>
 

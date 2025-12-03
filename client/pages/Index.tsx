@@ -199,7 +199,7 @@ export default function Home() {
           <div className="floating-shape w-24 h-24 bg-accent/5 rounded-full absolute bottom-20 right-1/3 animate-float-4"></div>
         </div>
 
-        <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+        <div className="max-w-7xl lg:max-w-none mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 md:space-y-8 animate-slide-in-left">
               <div>
@@ -272,7 +272,7 @@ export default function Home() {
         <div className="absolute top-20 right-10 w-32 h-32 bg-primary/5 rounded-full animate-float-slow"></div>
         <div className="absolute bottom-20 left-10 w-24 h-24 bg-accent/5 rounded-full animate-float-slow" style={{ animationDelay: '2s' }}></div>
 
-        <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="max-w-7xl lg:max-w-none mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div
               id="about-image"
@@ -335,7 +335,7 @@ export default function Home() {
           <div className="absolute bottom-1/3 right-20 w-20 h-20 bg-accent/5 rounded-full animate-float-2"></div>
         </div>
 
-        <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+        <div className="max-w-7xl lg:max-w-none mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
           <div
             id="programs-header"
             data-animate
@@ -382,7 +382,7 @@ export default function Home() {
                 <img
                   src={getAssetPath("programs-overview.png")}
                   alt="Our Programs"
-                  className="relative w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1"
+                  className="relative w-full h-48 sm:h-56 md:h-64 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1"
                 />
               </div>
             </div>
@@ -391,14 +391,14 @@ export default function Home() {
       </section>
 
       {/* Contact Us Section */}
-      <section className="min-h-screen flex items-center bg-primary text-white relative overflow-hidden py-20 md:py-0">
+      <section className="min-h-screen flex items-center bg-primary text-white relative overflow-hidden py-20 md:py-24">
         <div className="absolute inset-0">
           <div className="absolute top-20 right-20 w-32 h-32 bg-white/5 rounded-full animate-float-slow"></div>
           <div className="absolute bottom-20 left-20 w-24 h-24 bg-accent/20 rounded-full animate-float-slow" style={{ animationDelay: '3s' }}></div>
           <div className="absolute top-1/2 left-10 w-16 h-16 bg-white/10 rounded-full animate-pulse-gentle"></div>
         </div>
 
-        <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+        <div className="max-w-7xl lg:max-w-none mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div
               id="contact-content"
@@ -458,7 +458,7 @@ export default function Home() {
                 <img
                   src={getAssetPath("contact-us-hero.png")}
                   alt="Contact Us"
-                  className="relative w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1"
+                  className="relative w-full h-48 sm:h-56 md:h-64 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1"
                 />
               </div>
             </div>
@@ -468,11 +468,11 @@ export default function Home() {
 
 
       {/* Admissions Section */}
-      <section className="min-h-screen flex items-center bg-gradient-to-br from-white to-accent/5 relative overflow-hidden py-20 md:py-0">
+      <section className="min-h-screen flex items-center bg-gradient-to-br from-white to-accent/5 relative overflow-hidden py-20 md:py-24">
         <div className="absolute top-10 left-10 w-20 h-20 bg-primary/5 rounded-full animate-float-1"></div>
         <div className="absolute bottom-10 right-10 w-16 h-16 bg-accent/10 rounded-full animate-float-2"></div>
 
-        <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="max-w-7xl lg:max-w-none mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div
               id="admission-image"
@@ -485,7 +485,7 @@ export default function Home() {
                 <img
                   src={getAssetPath("admissions-hero.png")}
                   alt="Admission Onboarding"
-                  className="relative w-full h-80 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1"
+                  className="relative w-full h-48 sm:h-56 md:h-64 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1"
                 />
               </div>
             </div>
@@ -540,7 +540,7 @@ export default function Home() {
 
       {/* Services Section */}
       {/* <section className="py-20 bg-primary text-white">
-        <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-accent font-semibold text-sm mb-3">OUR ACTIVITIES</p>
             <h2 className="text-4xl font-bold mb-4">Best Services For Kids</h2>
@@ -571,7 +571,7 @@ export default function Home() {
 
       {/* Classes Section */}
       {/* <section className="py-20 bg-white">
-        <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-primary font-semibold text-sm mb-3">
               POPULAR CLASSES
@@ -633,7 +633,7 @@ export default function Home() {
 
       {/* Event Countdown Section */}
       {/* <section className="py-20 bg-primary text-white">
-        <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Upcoming Event Schedule</h2>
             <p className="text-purple-100">Annual Class Party 2019</p>
@@ -685,7 +685,7 @@ export default function Home() {
 
       {/* Blog Section */}
       {/* <section className="py-20 bg-white">
-        <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-primary font-semibold text-sm mb-3">
               LATEST BLOG POST
