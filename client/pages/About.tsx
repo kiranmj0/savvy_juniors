@@ -39,15 +39,16 @@ export default function About() {
                 />
               </div>
               <div className="order-1 lg:order-2 text-left space-y-5 lg:space-y-6 text-gray-700 leading-relaxed px-4 sm:px-0 flex flex-col justify-center">
+
                 <p>
+                  At Savvy Juniors, childhood is honoured. Curiosity is encouraged. Independence is nurtured. And every milestone—big or small—is treasured.
+                </p><p>
                   Savvy Juniors Early Childhood Centre opens early 2026, bringing a fresh, research-led, and child-centred early years experience to families in the UAE. We welcome children from 45 days to 5 years, offering a warm, nurturing environment where every child is valued, understood, and celebrated.
                 </p>
                 <p>
                   Our approach blends the British curriculum alongside Montessori approach, enriched by the latest insights in early childhood neuroscience. This ensures that children experience learning that is child-led, purposeful, and deeply connected to the way young brains naturally grow.
                 </p>
-                <p>
-                  At Savvy Juniors, childhood is honoured. Curiosity is encouraged. Independence is nurtured. And every milestone—big or small—is treasured.
-                </p>
+
                 <p>
                   Savvy Juniors nursery space was designed to be a safe and nurturing environment where children feel loved, respected, and supported both physically and emotionally. We have transformed our spaces into sanctuaries filled with abundant natural light, educational play equipment and supplies.
                 </p>
