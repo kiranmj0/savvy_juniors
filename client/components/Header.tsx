@@ -36,8 +36,7 @@ export default function Header() {
         : 'bg-white shadow-sm'
         }`}>
         <div className="max-w-7xl lg:max-w-none mx-auto p-4 sm:px-6 lg:px-8">
-          <div className={`flex items-center justify-between transition-all duration-300 ${scrolled ? 'h-14' : 'h-16'
-            }`}>
+          <div className="flex items-center justify-between h-16">
 
             {/* Logo and Navigation */}
             <div className="flex items-center gap-4 lg:gap-8">
@@ -47,7 +46,7 @@ export default function Header() {
                   <img
                     src={getAssetPath("navvy_image.png")}
                     alt="Savvy Juniors"
-                    className={`p-1 md:p-2 object-contain transition-all duration-300 group-hover:scale-105 ${scrolled ? 'h-24 w-24 md:h-32 md:w-32' : 'h-28 w-28 md:h-40 md:w-40'
+                    className={`p-1 md:p-2 object-contain transition-all duration-300 group-hover:scale-105 ${scrolled ? 'h-20 w-20 md:h-24 md:w-24' : 'h-24 w-24 md:h-28 md:w-28'
                       }`}
                     loading="eager"
                     decoding="async"
@@ -139,6 +138,22 @@ export default function Header() {
                   </Link>
                 );
               })}
+              
+              {/* Mobile Contact Link */}
+              <Link
+                to="/contact"
+                className={`block py-3 px-4 rounded-lg text-sm font-medium transition-all duration-300 transform ${location.pathname === '/contact'
+                  ? 'text-white bg-gradient-to-r from-primary to-blue-600 shadow-md scale-105'
+                  : 'text-gray-700 hover:text-primary hover:bg-primary/5 hover:translate-x-2'
+                  }`}
+                onClick={() => setIsOpen(false)}
+              >
+                <div className="flex items-center justify-between">
+                  Contact
+                  <ChevronRight className={`w-4 h-4 transition-transform duration-300 ${location.pathname === '/contact' ? 'text-white' : 'text-gray-400'
+                    }`} />
+                </div>
+              </Link>
             </nav>
           </div>
         </div>

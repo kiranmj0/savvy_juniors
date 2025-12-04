@@ -406,8 +406,8 @@ export default function Home() {
               className={`transition-all duration-1000 transform ${isVisible['contact-content'] ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'
                 }`}
             >
-              <h2 className="text-4xl font-bold mb-6 animate-slide-in-left text-white">
-                Contact/Concierge
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-slide-in-left text-white">
+                <span className="whitespace-nowrap">Contact/Concierge</span>
               </h2>
               <p className="text-white text-lg font-medium animate-fade-in-up drop-shadow-sm mb-4" style={{ animationDelay: '0.2s' }}>
                 Ready to give your child the best start in life? Get in touch with our team to learn more about our programs, schedule a visit, or begin the enrollment process.
