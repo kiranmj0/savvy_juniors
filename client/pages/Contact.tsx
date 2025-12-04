@@ -27,42 +27,22 @@ const Contact = () => {
     setShowSendOptions(true);
   };
 
-  const handleNormalSubmit = async () => {
-    setIsSubmitting(true);
-    setSubmitStatus('idle');
+  const handleNormalSubmit = () => {
+    const message = `New Enquiry from Savvy Juniors Website
+
+Name: ${formData.name}
+Email: ${formData.email}${formData.phone ? `
+Phone: ${formData.phone}` : ''}
+Subject: ${formData.subject}
+
+Message:
+${formData.message}`;
+    const smsUrl = `sms:+971585800346?body=${encodeURIComponent(message)}`;
+    window.location.href = smsUrl;
     setShowSendOptions(false);
-
-    try {
-      const response = await fetch('/api/enquiry', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const result = await response.json();
-
-      if (result.success) {
-        setSubmitStatus('success');
-        setStatusMessage('Thank you! Your enquiry has been submitted successfully. We will contact you soon.');
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          subject: "",
-          message: "",
-        });
-      } else {
-        setSubmitStatus('error');
-        setStatusMessage(result.error || 'Failed to submit enquiry. Please try again.');
-      }
-    } catch (error) {
-      setSubmitStatus('error');
-      setStatusMessage('Network error. Please check your connection and try again.');
-    } finally {
-      setIsSubmitting(false);
-    }
+    setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+    setSubmitStatus('success');
+    setStatusMessage('SMS app opened successfully! Please send the message from your SMS application.');
   };
 
   const handleWhatsAppSend = () => {
@@ -408,8 +388,7 @@ This enquiry was sent via the Savvy Juniors website contact form.`;
 
               <button
                 onClick={handleNormalSubmit}
-                disabled={isSubmitting}
-                className="w-full flex items-center gap-3 sm:gap-4 p-3 sm:p-5 border-2 border-primary/30 rounded-xl hover:bg-primary/5 hover:border-primary/50 transition-all duration-200 group hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed active:scale-95"
+                className="w-full flex items-center gap-3 sm:gap-4 p-3 sm:p-5 border-2 border-primary/30 rounded-xl hover:bg-primary/5 hover:border-primary/50 transition-all duration-200 group hover:shadow-md active:scale-95"
               >
                 <div className="bg-primary/10 p-2 sm:p-3 rounded-full group-hover:bg-primary/20 transition-colors flex-shrink-0">
                   <MessageSquare className="w-5 h-5 sm:w-7 sm:h-7 text-primary" />
@@ -418,13 +397,9 @@ This enquiry was sent via the Savvy Juniors website contact form.`;
                   <div className="font-semibold text-gray-900 text-base sm:text-lg truncate">Send Normal Message</div>
                   <div className="text-xs sm:text-sm text-gray-600">Submit your message directly</div>
                 </div>
-                {isSubmitting ? (
-                  <div className="w-4 h-4 sm:w-5 sm:h-5 border-2 border-primary/30 border-t-primary rounded-full animate-spin flex-shrink-0" />
-                ) : (
-                  <div className="text-primary opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0">
-                    →
-                  </div>
-                )}
+                <div className="text-primary opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0">
+                  →
+                </div>
               </button>
             </div>
           </div>
