@@ -81,7 +81,7 @@ export default function Footer() {
           {/* Contact Info */}
           <div className="text-left">
             <h3 className="font-bold text-lg mb-4 text-white">Contact Info</h3>
-            <div className="space-y-0 lg:space-y-2">
+            <div className="-space-y-1 lg:space-y-2">
               {/* Phone */}
               <a
                 href="tel:+971585708135"
@@ -95,10 +95,10 @@ export default function Footer() {
                 href="https://maps.google.com/?q=Grandiose,Dubai+Sports+Village,Dubai,UAE"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-start gap-2 py-0 lg:py-1 transition-all text-white hover:font-bold text-sm"
+                className="flex items-center gap-2 py-0 lg:py-1 transition-all text-white hover:font-bold text-sm"
               >
                 <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                <span className="text-sm sm:text-sm leading-tight">Grandiose, Dubai Sports Village, Dubai, UAE</span>
+                <span className="text-sm sm:text-sm leading-none">Grandiose, Dubai Sports Village, Dubai, UAE</span>
               </a>
               {/* Email */}
               <a
@@ -106,7 +106,7 @@ export default function Footer() {
                 className="flex items-center gap-2 py-0 lg:py-1 transition-all text-white hover:font-bold text-sm"
               >
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <span className="text-sm sm:text-sm break-all">savvyjunior@yahoo.com</span>
+                <span className="text-sm sm:text-sm break-all leading-none">savvyjunior@yahoo.com</span>
               </a>
             </div>
           </div>
