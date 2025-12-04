@@ -7,10 +7,10 @@ export default function Footer() {
 
   return (
     <footer className="footer-bg relative text-white bg-primary">
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
+      <div className="relative z-10 max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-2 lg:gap-8 mb-12">
           {/* Brand */}
-          <div className="md:col-span-1 lg:col-span-2">
+          <div className="md:col-span-3 lg:col-span-1 text-center md:text-left">
             <div className="flex items-center gap-3 mb-4">
               <div className="relative group bg-white rounded-full p-3 shadow-lg">
                 <img
@@ -42,36 +42,36 @@ export default function Footer() {
           </div>
 
           {/* Useful Links */}
-          <div className="md:col-span-1">
+          <div className="text-left">
             <h3 className="font-bold text-lg mb-4 text-white">Useful Links</h3>
-            <div className="space-y-1">
+            <div className="space-y-0 lg:space-y-1">
               <Link
                 to="/"
-                className="block py-1 px-2 transition-all text-white hover:font-bold text-sm"
+                className="block py-0 px-2 lg:py-1 transition-all text-white hover:font-bold text-sm"
               >
                 Home
               </Link>
               <Link
                 to="/about"
-                className="block py-1 px-2 transition-all text-white hover:font-bold text-sm"
+                className="block py-0 px-2 lg:py-1 transition-all text-white hover:font-bold text-sm"
               >
                 About Us
               </Link>
               <Link
                 to="/programs"
-                className="block py-1 px-2 transition-all text-white hover:font-bold text-sm"
+                className="block py-0 px-2 lg:py-1 transition-all text-white hover:font-bold text-sm"
               >
                 Programs
               </Link>
               <Link
                 to="/contact"
-                className="block py-1 px-2 transition-all text-white hover:font-bold text-sm"
+                className="block py-0 px-2 lg:py-1 transition-all text-white hover:font-bold text-sm"
               >
                 Contact Us
               </Link>
               <Link
                 to="/admissions"
-                className="block py-1 px-2 transition-all text-white hover:font-bold text-sm"
+                className="block py-0 px-2 lg:py-1 transition-all text-white hover:font-bold text-sm"
               >
                 Admissions
               </Link>
@@ -79,34 +79,34 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div className="md:col-span-1">
+          <div className="text-left">
             <h3 className="font-bold text-lg mb-4 text-white">Contact Info</h3>
-            <div className="space-y-2">
+            <div className="space-y-0 lg:space-y-2">
               {/* Phone */}
               <a
-                href="tel:+971585800346"
-                className="flex items-center gap-2 py-1 transition-all text-white hover:font-bold text-sm"
+                href="tel:+971585708135"
+                className="flex items-center gap-2 py-0 lg:py-1 transition-all text-white hover:font-bold text-sm"
               >
                 <Phone className="w-4 h-4 flex-shrink-0" />
-                <span className="text-xs sm:text-sm">+971 58 580 0346</span>
+                <span className="text-sm sm:text-sm">+971585708135</span>
               </a>
               {/* Location */}
               <a
-                href="https://maps.google.com/?q=Grandiose,Dubai+Sports+City,Dubai,UAE"
+                href="https://maps.google.com/?q=Grandiose,Dubai+Sports+Village,Dubai,UAE"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-start gap-2 py-1 transition-all text-white hover:font-bold text-sm"
+                className="flex items-start gap-2 py-0 lg:py-1 transition-all text-white hover:font-bold text-sm"
               >
                 <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                <span className="text-xs sm:text-sm leading-tight">Grandiose, Dubai Sports City, Dubai, UAE</span>
+                <span className="text-sm sm:text-sm leading-tight">Grandiose, Dubai Sports Village, Dubai, UAE</span>
               </a>
               {/* Email */}
               <a
-                href="mailto:contact@savvyjuniors.ae"
-                className="flex items-center gap-2 py-1 transition-all text-white hover:font-bold text-sm"
+                href="mailto:savvyjunior@yahoo.com"
+                className="flex items-center gap-2 py-0 lg:py-1 transition-all text-white hover:font-bold text-sm"
               >
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <span className="text-xs sm:text-sm break-all">contact@savvyjuniors.ae</span>
+                <span className="text-sm sm:text-sm break-all">savvyjunior@yahoo.com</span>
               </a>
             </div>
           </div>
@@ -165,16 +165,16 @@ export default function Footer() {
           {/* Social Links & Copyright */}
           <div className="flex flex-col sm:flex-row justify-between items-center gap-6">
             <div className="flex gap-6 order-2 sm:order-1">
-              <a href="#" className="hover:text-accent transition-colors p-2 rounded-full hover:bg-white/10">
+              <a href="https://facebook.com/savvyjuniors" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors p-2 rounded-full hover:bg-white/10">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="hover:text-accent transition-colors p-2 rounded-full hover:bg-white/10">
+              <a href="https://instagram.com/savvyjuniors" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors p-2 rounded-full hover:bg-white/10">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="hover:text-accent transition-colors p-2 rounded-full hover:bg-white/10">
+              <a href="https://twitter.com/savvyjuniors" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors p-2 rounded-full hover:bg-white/10">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="hover:text-accent transition-colors p-2 rounded-full hover:bg-white/10">
+              <a href="https://linkedin.com/company/savvyjuniors" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors p-2 rounded-full hover:bg-white/10">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>

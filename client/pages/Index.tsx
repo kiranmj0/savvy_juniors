@@ -190,7 +190,7 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center bg-gradient-to-br from-blue-50 to-white relative overflow-hidden pt-24 md:pt-32 lg:pt-0">
+      <section className="min-h-screen flex items-center bg-gradient-to-br from-blue-50 to-white relative overflow-hidden pt-32 md:pt-40 lg:pt-24">
         {/* Floating Elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="floating-shape w-20 h-20 bg-primary/10 rounded-full absolute top-40 left-10 animate-float-1"></div>
@@ -203,6 +203,9 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 md:space-y-8 animate-slide-in-left">
               <div>
+                <div className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4 animate-fade-in-up">
+                  🌟 Premium Early Childhood Centre
+                </div>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
                   <span className="inline-block animate-text-reveal-delay">
                     <span className="text-primary font-extrabold">S</span>
@@ -210,9 +213,11 @@ export default function Home() {
                     <span className="text-primary font-extrabold">vvy</span>
                     <span className="text-orange-500 font-extrabold ml-1">Juniors</span>
                   </span>
+                  <br />
+                  <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-700 font-medium">Nursery & Early Years</span>
                 </h1>
                 <p className="text-lg text-gray-600 max-w-xl leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-                  Join us for <span className="font-semibold text-primary animate-pulse-gentle">A Very British Tea Party</span> - 10am every weekday
+                  Where childhood is honoured and every milestone is treasured. <span className="font-semibold text-primary">Opening January 2026</span> in Dubai Sports Village.
                 </p>
               </div>
 
@@ -221,16 +226,16 @@ export default function Home() {
                   to="/contact"
                   className="bg-accent hover:bg-orange-600 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105 hover:shadow-xl text-center group relative overflow-hidden"
                 >
-                  <span className="relative z-10 text-white">Join Us for Tour</span>
+                  <span className="relative z-10 text-white">Join Us for a Tour</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
                 </Link>
                 <a
-                  href="https://maps.google.com/?q=Grandiose,Dubai+Sports+City,Dubai,UAE"
+                  href="https://maps.google.com/?q=Grandiose,Dubai+Sports+Village,Dubai,UAE"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 flex items-center justify-center gap-2 group hover:shadow-lg hover:scale-105"
                 >
-                  View Location <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  View Location
                 </a>
               </div>
 
@@ -251,16 +256,20 @@ export default function Home() {
             </div>
 
             <div className="relative animate-slide-in-right pb-8 md:pb-8 lg:pb-0">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-3xl animate-pulse-slow"></div>
-              <div className="absolute -top-4 -right-4 w-8 h-8 bg-accent rounded-full animate-bounce-gentle"></div>
-              <div className="absolute -bottom-6 -left-6 w-6 h-6 bg-primary rounded-full animate-bounce-gentle" style={{ animationDelay: '1s' }}></div>
-              <div className="relative h-96 bg-white rounded-full overflow-hidden flex items-center justify-center shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 group">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-3xl animate-pulse-slow"></div>
+              <div className="absolute -top-4 -right-4 w-8 h-8 bg-accent rounded-full animate-bounce-gentle flex items-center justify-center text-white text-xs font-bold">✨</div>
+              <div className="absolute -bottom-6 -left-6 w-6 h-6 bg-primary rounded-full animate-bounce-gentle flex items-center justify-center text-white text-xs" style={{ animationDelay: '1s' }}>🎨</div>
+              <div className="relative h-64 sm:h-80 md:h-96 bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 group">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img
                   src={getAssetPath("hero-banner.png")}
-                  alt="Kids learning"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:rotate-2"
+                  alt="Child coloring with crayons to write SAVVY - representing creativity and learning at Savvy Juniors Nursery"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
+                {/* <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-3">
+                  <p className="text-sm font-semibold text-gray-800">Ages 45 days - 5 years</p>
+                  <p className="text-xs text-gray-600">British Curriculum • Montessori Approach</p>
+                </div> */}
               </div>
             </div>
           </div>
@@ -284,8 +293,12 @@ export default function Home() {
               <div className="absolute top-4 right-4 w-4 h-4 bg-accent rounded-full animate-ping"></div>
               <img
                 src={getAssetPath("newsletter-banner.jpg")}
-                alt="Savvy Juniors Early Childhood Centre"
+                alt="Children engaged in Montessori learning activities at Savvy Juniors"
                 className="relative w-full rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1"
+                onError={(e) => {
+                  console.error('Image failed to load:', e.currentTarget.src);
+                  e.currentTarget.src = getAssetPath("hero-banner.png");
+                }}
               />
             </div>
 
@@ -308,11 +321,11 @@ export default function Home() {
               </div>
 
               <div className="space-y-4 leading-relaxed">
-                <p className="text-white text-lg font-medium animate-fade-in-up drop-shadow-sm" style={{ animationDelay: '0.6s' }}>
-                  Savvy Juniors Early Childhood Centre opens early 2026, bringing a fresh, research-led, and child-centred early years experience to families in the UAE. We welcome children from 45 days to 5 years in a warm, nurturing environment.
-                </p>
-                <p className="text-white/95 text-base font-semibold animate-fade-in-up drop-shadow-sm" style={{ animationDelay: '0.8s' }}>
+                <p className="text-white/95 text-base font-semibold animate-fade-in-up drop-shadow-sm" style={{ animationDelay: '0.6s' }}>
                   At Savvy Juniors, childhood is honoured. Curiosity is encouraged. Independence is nurtured. And every milestone—big or small—is treasured.
+                </p>
+                <p className="text-white text-lg font-medium animate-fade-in-up drop-shadow-sm" style={{ animationDelay: '0.8s' }}>
+                  Savvy Juniors Early Childhood Centre opens January 2026, bringing a fresh, research-led, and child-centred early years experience to families in the UAE. We welcome children from 45 days to 5 years in a warm, nurturing environment.
                 </p>
               </div>
 
@@ -358,7 +371,7 @@ export default function Home() {
                 }`}
             >
               <h3 className="text-3xl font-bold text-primary mb-4 animate-slide-in-left" style={{ animationDelay: '0.2s' }}>
-                <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Infant (2 weeks – 12 months)</span>
+                <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Infant (45 days – 12 months)</span>
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
                 A gentle, nurturing start for the youngest learners. Our Infant Room is designed to feel like a second home—calm, secure, and responsive. Babies experience rich sensory play, early communication, movement exploration, and warm one-to-one interactions that build strong attachment and trust. We follow each baby's natural routine and create personalised care plans in partnership with families.
@@ -381,7 +394,7 @@ export default function Home() {
                 <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img
                   src={getAssetPath("programs-overview.png")}
-                  alt="Our Programs"
+                  alt="Montessori-inspired learning environment and age-appropriate programs"
                   className="relative w-full h-48 sm:h-56 md:h-64 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1"
                 />
               </div>
@@ -407,7 +420,7 @@ export default function Home() {
                 }`}
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-slide-in-left text-white">
-                <span className="whitespace-nowrap">Contact/Concierge</span>
+                <span className="whitespace-nowrap">Contact</span>
               </h2>
               <p className="text-white text-lg font-medium animate-fade-in-up drop-shadow-sm mb-4" style={{ animationDelay: '0.2s' }}>
                 Ready to give your child the best start in life? Get in touch with our team to learn more about our programs, schedule a visit, or begin the enrollment process.
@@ -419,7 +432,7 @@ export default function Home() {
                       <i className="fas fa-phone-alt"></i>
                     </span>
                   </div>
-                  <span className="transition-colors">+971 58 580 0346</span>
+                  <span className="transition-colors">+971585708135</span>
                 </div>
                 <div className="flex items-center gap-3 animate-slide-in-left" style={{ animationDelay: '0.6s' }}>
                   <div className="bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg">
@@ -427,7 +440,7 @@ export default function Home() {
                       <i className="fas fa-envelope"></i>
                     </span>
                   </div>
-                  <span className="transition-colors">contact@savvyjuniors.ae</span>
+                  <span className="transition-colors">savvyjunior@yahoo.com</span>
                 </div>
                 <div className="flex items-center gap-3 animate-slide-in-left" style={{ animationDelay: '0.8s' }}>
                   <div className="bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg">
@@ -435,7 +448,7 @@ export default function Home() {
                       <i className="fas fa-map-marker-alt"></i>
                     </span>
                   </div>
-                  <span className="transition-colors ">Grandiose, Dubai Sports City, Dubai, UAE</span>
+                  <span className="transition-colors ">Grandiose, Dubai Sports Village, Dubai, UAE</span>
                 </div>
               </div>
               <Link
@@ -457,7 +470,7 @@ export default function Home() {
                 <div className="absolute -inset-4 bg-gradient-to-r from-accent/30 to-white/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img
                   src={getAssetPath("contact-us-hero.png")}
-                  alt="Contact Us"
+                  alt="Welcoming environment for families at Savvy Juniors nursery"
                   className="relative w-full h-48 sm:h-56 md:h-64 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1"
                 />
               </div>
@@ -484,7 +497,7 @@ export default function Home() {
                 <div className="absolute top-4 left-4 w-4 h-4 bg-primary rounded-full animate-ping"></div>
                 <img
                   src={getAssetPath("admissions-hero.png")}
-                  alt="Admission Onboarding"
+                  alt="Admissions process and onboarding at Savvy Juniors nursery"
                   className="relative w-full h-48 sm:h-56 md:h-64 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1"
                 />
               </div>
@@ -495,33 +508,33 @@ export default function Home() {
               className={`transition-all duration-1000 transform ${isVisible['admission-content'] ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'}`}
             >
               <h2 className="text-4xl font-bold text-gray-900 mb-6 animate-slide-in-right">
-                <span className="bg-gradient-to-r from-gray-900 to-primary bg-clip-text text-transparent">Admission Onboarding</span>
+                <span className="bg-gradient-to-r from-gray-900 to-primary bg-clip-text text-transparent">Admissions and Onboarding</span>
               </h2>
               <p className="text-gray-700 leading-relaxed mb-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-                Join the Savvy Juniors family and give your child the best start in life. Our admission process is designed to ensure the best fit for your family and your child's unique needs.
+                Ready to give your child the best start in life? Book your nursery visit and discover our nurturing environment where every child thrives.
               </p>
               <div className="space-y-3 mb-8">
                 {/* Using Custom Icons Instead of Bullets */}
-                <div className="flex items-center gap-3 animate-slide-in-right group cursor-pointer" style={{ animationDelay: '0.4s' }}>
+                <div className="flex items-center gap-4 animate-slide-in-right" style={{ animationDelay: '0.4s' }}>
                   {/* Tour Icon */}
-                  <span className="text-primary text-xl">
-                    <i className="fas fa-map-signs"></i> {/* Tour Icon */}
-                  </span>
-                  <span className="text-gray-700 group-hover:text-primary transition-colors">Schedule a tour of our facilities</span>
+                  <div className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center">
+                    <i className="fas fa-map-signs text-sm"></i>
+                  </div>
+                  <span className="text-gray-700">Schedule a tour of our facilities</span>
                 </div>
-                <div className="flex items-center gap-3 animate-slide-in-right group cursor-pointer" style={{ animationDelay: '0.6s' }}>
+                <div className="flex items-center gap-4 animate-slide-in-right" style={{ animationDelay: '0.6s' }}>
                   {/* Application Form Icon */}
-                  <span className="text-primary text-xl">
-                    <i className="fas fa-file-alt"></i> {/* Form Icon */}
-                  </span>
-                  <span className="text-gray-700 group-hover:text-primary transition-colors">Complete the application form</span>
+                  <div className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center">
+                    <i className="fas fa-file-alt text-sm"></i>
+                  </div>
+                  <span className="text-gray-700">Complete the application form</span>
                 </div>
-                <div className="flex items-center gap-3 animate-slide-in-right group cursor-pointer" style={{ animationDelay: '0.8s' }}>
+                <div className="flex items-center gap-4 animate-slide-in-right" style={{ animationDelay: '0.8s' }}>
                   {/* Meeting Icon */}
-                  <span className="text-primary text-xl">
-                    <i className="fas fa-users"></i> {/* Meeting Icon */}
-                  </span>
-                  <span className="text-gray-700 group-hover:text-primary transition-colors">Meet with our educational team</span>
+                  <div className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center">
+                    <i className="fas fa-users text-sm"></i>
+                  </div>
+                  <span className="text-gray-700">Meet with our educational team</span>
                 </div>
               </div>
               <Link

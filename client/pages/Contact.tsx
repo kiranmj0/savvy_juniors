@@ -19,7 +19,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+    if (!formData.name || !formData.email || !formData.phone || !formData.subject || !formData.message) {
       setSubmitStatus('error');
       setStatusMessage('Please fill in all required fields.');
       return;
@@ -37,7 +37,7 @@ Subject: ${formData.subject}
 
 Message:
 ${formData.message}`;
-    const smsUrl = `sms:+971585800346?body=${encodeURIComponent(message)}`;
+    const smsUrl = `sms:+971585708135?body=${encodeURIComponent(message)}`;
     window.location.href = smsUrl;
     setShowSendOptions(false);
     setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
@@ -58,7 +58,7 @@ ${formData.message}
 
 ---
 _Sent via Savvy Juniors Contact Form_`;
-    const whatsappUrl = `https://wa.me/971585800346?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/9971585708135?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
     setShowSendOptions(false);
     setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
@@ -91,7 +91,7 @@ ${formData.name}
 
 ---
 This enquiry was sent via the Savvy Juniors website contact form.`;
-    const mailtoUrl = `mailto:contact@savvyjuniors.ae?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoUrl = `mailto:savvyjunior@yahoo.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoUrl;
     setShowSendOptions(false);
     setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
@@ -114,7 +114,7 @@ This enquiry was sent via the Savvy Juniors website contact form.`;
         <div className="max-w-7xl lg:max-w-none mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 animate-fade-in-up">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-gray-900 to-primary bg-clip-text text-transparent whitespace-nowrap">Contact/Concierge</span>
+              <span className="bg-gradient-to-r from-gray-900 to-primary bg-clip-text text-transparent whitespace-nowrap">Contact</span>
             </h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Get in touch with us for any inquiries or support
@@ -134,8 +134,8 @@ This enquiry was sent via the Savvy Juniors website contact form.`;
                       </div>
                       <div>
                         <h3 className="font-semibold text-gray-900 text-base">Phone</h3>
-                        <a href="tel:+971585800346" className="text-sm text-gray-700 hover:text-primary font-medium transition-colors">
-                          +971 58 580 0346
+                        <a href="tel:+971585708135" className="text-sm text-gray-700 hover:text-primary font-medium transition-colors">
+                          +971585708135
                         </a>
                       </div>
                     </div>
@@ -149,12 +149,12 @@ This enquiry was sent via the Savvy Juniors website contact form.`;
                       <div>
                         <h3 className="font-semibold text-gray-900 text-base">Address</h3>
                         <a
-                          href="https://maps.google.com/?q=Grandiose,Dubai+Sports+City,Dubai,UAE"
+                          href="https://maps.google.com/?q=Grandiose,Dubai+Sports+Village,Dubai,UAE"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-sm text-gray-700 hover:text-primary font-medium transition-colors"
                         >
-                          Grandiose, Dubai Sports City,<br />Dubai, UAE
+                          Grandiose, Dubai Sports Village,<br />Dubai, UAE
                         </a>
                       </div>
                     </div>
@@ -167,8 +167,8 @@ This enquiry was sent via the Savvy Juniors website contact form.`;
                       </div>
                       <div>
                         <h3 className="font-semibold text-gray-900 text-base">Email</h3>
-                        <a href="mailto:contact@savvyjuniors.ae" className="text-sm text-gray-700 hover:text-primary font-medium transition-colors">
-                          contact@savvyjuniors.ae
+                        <a href="mailto:savvyjunior@yahoo.com" className="text-sm text-gray-700 hover:text-primary font-medium transition-colors">
+                          savvyjunior@yahoo.com
                         </a>
                       </div>
                     </div>
@@ -184,12 +184,12 @@ This enquiry was sent via the Savvy Juniors website contact form.`;
                       <div>
                         <h3 className="font-semibold text-gray-900 text-base">WhatsApp</h3>
                         <a
-                          href="https://wa.me/971585800346"
+                          href="https://wa.me/9971585708135"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-sm text-gray-700 hover:text-green-600 font-medium transition-colors"
                         >
-                          +971 58 580 0346
+                          +971585708135
                         </a>
                       </div>
                     </div>
@@ -256,7 +256,7 @@ This enquiry was sent via the Savvy Juniors website contact form.`;
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-medium text-gray-700 mb-1">Phone Number</label>
+                    <label className="block text-xs font-medium text-gray-700 mb-1">Phone Number *</label>
                     <input
                       type="tel"
                       name="phone"
@@ -264,6 +264,7 @@ This enquiry was sent via the Savvy Juniors website contact form.`;
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors text-sm"
+                      required
                     />
                   </div>
                 </div>

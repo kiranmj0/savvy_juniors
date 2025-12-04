@@ -123,35 +123,33 @@ export default function Header() {
                   <Link
                     key={item.href}
                     to={item.href}
-                    className={`block py-3 px-4 rounded-lg text-sm font-medium transition-all duration-300 transform ${isActive
-                      ? 'text-white bg-gradient-to-r from-primary to-blue-600 shadow-md scale-105'
-                      : 'text-gray-700 hover:text-primary hover:bg-primary/5 hover:translate-x-2'
+                    className={`block py-3 px-4 rounded-lg text-sm font-medium transition-all duration-300 ${isActive
+                      ? 'text-white bg-gradient-to-r from-primary to-blue-600 shadow-md'
+                      : 'text-gray-700 hover:text-primary hover:bg-primary/5'
                       }`}
                     style={{ animationDelay: `${index * 50}ms` }}
                     onClick={() => setIsOpen(false)}
                   >
                     <div className="flex items-center justify-between">
                       {item.label}
-                      <ChevronRight className={`w-4 h-4 transition-transform duration-300 ${isActive ? 'text-white' : 'text-gray-400'
-                        }`} />
+                      {!isActive && <ChevronRight className="w-4 h-4 text-gray-400" />}
                     </div>
                   </Link>
                 );
               })}
-              
+
               {/* Mobile Contact Link */}
               <Link
                 to="/contact"
-                className={`block py-3 px-4 rounded-lg text-sm font-medium transition-all duration-300 transform ${location.pathname === '/contact'
-                  ? 'text-white bg-gradient-to-r from-primary to-blue-600 shadow-md scale-105'
-                  : 'text-gray-700 hover:text-primary hover:bg-primary/5 hover:translate-x-2'
+                className={`block py-3 px-4 rounded-lg text-sm font-medium transition-all duration-300 ${location.pathname === '/contact'
+                  ? 'text-white bg-gradient-to-r from-primary to-blue-600 shadow-md'
+                  : 'text-gray-700 hover:text-primary hover:bg-primary/5'
                   }`}
                 onClick={() => setIsOpen(false)}
               >
                 <div className="flex items-center justify-between">
                   Contact
-                  <ChevronRight className={`w-4 h-4 transition-transform duration-300 ${location.pathname === '/contact' ? 'text-white' : 'text-gray-400'
-                    }`} />
+                  {location.pathname !== '/contact' && <ChevronRight className="w-4 h-4 text-gray-400" />}
                 </div>
               </Link>
             </nav>
@@ -160,9 +158,9 @@ export default function Header() {
       </header>
 
       {/* WhatsApp floating button */}
-      <div className={`fixed right-4 bottom-20 z-40 transition-all duration-500 ${showSlideIn ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
+      <div className={`fixed right-4 bottom-24 z-40 transition-all duration-500 ${showSlideIn ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
         }`}>
-        <a href="https://wa.me/971585800346" target="_blank" rel="noopener noreferrer" className="block">
+        <a href="https://wa.me/9971585708135" target="_blank" rel="noopener noreferrer" className="block">
           <div className="bg-green-500 hover:bg-green-600 px-4 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer">
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">

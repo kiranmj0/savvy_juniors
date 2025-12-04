@@ -22,7 +22,7 @@ const Programs = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <div className="animate-slide-in-right" style={{ animationDelay: "0.2s" }}>
               <h2 className="text-3xl font-bold text-primary mb-4">
-                Infant (2 weeks – 12 months)
+                Infant (45 days – 12 months)
               </h2>
               <p className="text-gray-700 leading-relaxed">
                 A gentle, nurturing start for the youngest learners. Our Infant Room is designed to feel like a second home—calm, secure, and responsive. Babies experience rich sensory play, early communication, movement exploration, and warm one-to-one interactions that build strong attachment and trust. We follow each baby's natural routine and create personalised care plans in partnership with families.
@@ -31,7 +31,7 @@ const Programs = () => {
             <div className="lg:order-first animate-slide-in-left" style={{ animationDelay: "0.1s" }}>
               <img
                 src={getAssetPath("services-overview.png")}
-                alt="Infant Program"
+                alt="Gentle Montessori infant care environment with sensory play materials"
                 className="w-full h-48 sm:h-56 md:h-72 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
             </div>
@@ -50,7 +50,7 @@ const Programs = () => {
             <div className="animate-slide-in-right" style={{ animationDelay: "0.4s" }}>
               <img
                 src={getAssetPath("gallery-showcase.png")}
-                alt="Toddler Program"
+                alt="Toddlers exploring Montessori practical life activities and movement"
                 className="w-full h-48 sm:h-56 md:h-72 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
             </div>
@@ -69,7 +69,7 @@ const Programs = () => {
             <div className="lg:order-first animate-slide-in-left" style={{ animationDelay: "0.6s" }}>
               <img
                 src={getAssetPath("events-calendar.png")}
-                alt="Early Learners Program"
+                alt="Early learners engaged in Montessori language and numeracy activities"
                 className="w-full h-48 sm:h-56 md:h-72 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
             </div>
@@ -88,7 +88,7 @@ const Programs = () => {
             <div className="animate-slide-in-right" style={{ animationDelay: "0.8s" }}>
               <img
                 src={getAssetPath("staff-team.jpg")}
-                alt="Foundation Stage FS1"
+                alt="Foundation Stage children working with Montessori materials and British curriculum"
                 className="w-full h-48 sm:h-56 md:h-72 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
             </div>
@@ -107,7 +107,7 @@ const Programs = () => {
             <div className="lg:order-first animate-slide-in-left" style={{ animationDelay: "1.0s" }}>
               <img
                 src={getAssetPath("facilities-tour.png")}
-                alt="Foundation Stage FS2"
+                alt="School-ready children in Montessori-prepared environment with British EYFS framework"
                 className="w-full h-48 sm:h-56 md:h-72 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105"
               />
             </div>

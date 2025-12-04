@@ -11,7 +11,7 @@ const Admissions = () => {
         <div className="max-w-7xl lg:max-w-none mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-gray-900 to-primary bg-clip-text text-transparent">Admission Onboarding</span>
+              <span className="bg-gradient-to-r from-gray-900 to-primary bg-clip-text text-transparent">Admissions and Onboarding</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Join the Savvy Juniors family and give your child the best start in life
