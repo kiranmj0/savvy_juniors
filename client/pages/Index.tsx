@@ -199,8 +199,8 @@ export default function Home() {
           <div className="floating-shape w-24 h-24 bg-accent/5 rounded-full absolute bottom-20 right-1/3 animate-float-4"></div>
         </div>
 
-        <div className="max-w-7xl lg:max-w-none mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-9xl lg:max-w-none mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center lg:ml-20">
             <div className="space-y-6 md:space-y-8 animate-slide-in-left">
               <div>
                 <div className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold inline-block mb-4 animate-fade-in-up">
@@ -209,15 +209,15 @@ export default function Home() {
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
                   <span className="inline-block animate-text-reveal-delay">
                     <span className="text-primary font-extrabold">S</span>
-                    <span className="text-orange-500 font-extrabold">a</span>
+                    <span className="text-primary font-extrabold">a</span>
                     <span className="text-primary font-extrabold">vvy</span>
                     <span className="text-orange-500 font-extrabold ml-1">Juniors</span>
                   </span>
                   <br />
-                  <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-700 font-medium">Nursery & Early Years</span>
+                  {/* <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-700 font-medium">Nursery & Early Years</span> */}
                 </h1>
                 <p className="text-lg text-gray-600 max-w-xl leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-                  Where childhood is honoured and every milestone is treasured. <span className="font-semibold text-primary">Opening January 2026</span> in Dubai Sports Village.
+                  Where childhood is honoured and every milestone is treasured. <span className="font-semibold text-primary">Opening soon in 2026</span> in Dubai Sports Village.
                 </p>
               </div>
 
@@ -255,7 +255,7 @@ export default function Home() {
               </div> */}
             </div>
 
-            <div className="relative animate-slide-in-right pb-8 md:pb-8 lg:pb-0">
+            <div className="relative animate-slide-in-right pb-0">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-3xl animate-pulse-slow"></div>
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-accent rounded-full animate-bounce-gentle flex items-center justify-center text-white text-xs font-bold">✨</div>
               <div className="absolute -bottom-6 -left-6 w-6 h-6 bg-primary rounded-full animate-bounce-gentle flex items-center justify-center text-white text-xs" style={{ animationDelay: '1s' }}>🎨</div>
@@ -395,7 +395,7 @@ export default function Home() {
                 <img
                   src={getAssetPath("programs-overview.png")}
                   alt="Montessori-inspired learning environment and age-appropriate programs"
-                  className="relative w-full h-48 sm:h-56 md:h-64 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1"
+                  className="relative w-full h-48 sm:h-56 md:h-64 lg:h-80 xl:h-96 object-cover object-center rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1"
                 />
               </div>
             </div>
@@ -440,7 +440,7 @@ export default function Home() {
                       <i className="fas fa-envelope"></i>
                     </span>
                   </div>
-                  <span className="transition-colors">savvyjunior@yahoo.com</span>
+                  <span className="transition-colors">savvyjuniors.ae@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3 animate-slide-in-left" style={{ animationDelay: '0.8s' }}>
                   <div className="bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg">
@@ -448,7 +448,7 @@ export default function Home() {
                       <i className="fas fa-map-marker-alt"></i>
                     </span>
                   </div>
-                  <span className="transition-colors ">Grandiose, Dubai Sports Village, Dubai, UAE</span>
+                  <span className="transition-colors ">Grandiose, Dubai Sports Village, Dubai sports city, Dubai, UAE</span>
                 </div>
               </div>
               <Link

@@ -91,7 +91,7 @@ ${formData.name}
 
 ---
 This enquiry was sent via the Savvy Juniors website contact form.`;
-    const mailtoUrl = `mailto:savvyjunior@yahoo.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoUrl = `mailto:savvyjuniors.ae@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoUrl;
     setShowSendOptions(false);
     setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
@@ -154,7 +154,7 @@ This enquiry was sent via the Savvy Juniors website contact form.`;
                           rel="noopener noreferrer"
                           className="text-sm text-gray-700 hover:text-primary font-medium transition-colors"
                         >
-                          Grandiose, Dubai Sports Village,<br />Dubai, UAE
+                          Grandiose, Dubai Sports Village, Dubai sports city,<br />Dubai, UAE
                         </a>
                       </div>
                     </div>
@@ -167,8 +167,8 @@ This enquiry was sent via the Savvy Juniors website contact form.`;
                       </div>
                       <div>
                         <h3 className="font-semibold text-gray-900 text-base">Email</h3>
-                        <a href="mailto:savvyjunior@yahoo.com" className="text-sm text-gray-700 hover:text-primary font-medium transition-colors">
-                          savvyjunior@yahoo.com
+                        <a href="mailto:savvyjuniors.ae@gmail.com" className="text-sm text-gray-700 hover:text-primary font-medium transition-colors">
+                          savvyjuniors.ae@gmail.com
                         </a>
                       </div>
                     </div>

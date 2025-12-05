@@ -73,7 +73,7 @@ export default function Footer() {
                 to="/admissions"
                 className="block py-0 px-2 lg:py-1 transition-all text-white hover:font-bold text-sm"
               >
-                Admissions
+                Admissions & Onboarding
               </Link>
             </div>
           </div>
@@ -98,15 +98,15 @@ export default function Footer() {
                 className="flex items-center gap-2 py-0 lg:py-1 transition-all text-white hover:font-bold text-sm"
               >
                 <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                <span className="text-sm sm:text-sm leading-none">Grandiose, Dubai Sports Village, Dubai, UAE</span>
+                <span className="text-sm sm:text-sm leading-none">Grandiose, Dubai Sports Village, Dubai sports city, Dubai, UAE</span>
               </a>
               {/* Email */}
               <a
-                href="mailto:savvyjunior@yahoo.com"
+                href="mailto:savvyjuniors.ae@gmail.com"
                 className="flex items-center gap-2 py-0 lg:py-1 transition-all text-white hover:font-bold text-sm"
               >
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <span className="text-sm sm:text-sm break-all leading-none">savvyjunior@yahoo.com</span>
+                <span className="text-sm sm:text-sm break-all leading-none">savvyjuniors.ae@gmail.com</span>
               </a>
             </div>
           </div>
@@ -171,12 +171,12 @@ export default function Footer() {
               <a href="https://instagram.com/savvyjuniors" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors p-2 rounded-full hover:bg-white/10">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://twitter.com/savvyjuniors" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors p-2 rounded-full hover:bg-white/10">
+              {/* <a href="https://twitter.com/savvyjuniors" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors p-2 rounded-full hover:bg-white/10">
                 <Twitter className="w-5 h-5" />
               </a>
               <a href="https://linkedin.com/company/savvyjuniors" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors p-2 rounded-full hover:bg-white/10">
                 <Linkedin className="w-5 h-5" />
-              </a>
+              </a> */}
             </div>
             <p className="text-sm text-white/80 text-center sm:text-right order-1 sm:order-2">
               Savvy Juniors © {currentYear} All Rights Reserved

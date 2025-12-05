@@ -15,7 +15,7 @@ export default function Header() {
     { label: "About Us", href: "/about" },
     { label: "Programs", href: "/programs" },
     // { label: "Contact Us", href: "/contact" },
-    { label: "Admissions", href: "/admissions" },
+    { label: "Admissions & Onboarding", href: "/admissions" },
   ];
 
   useEffect(() => {

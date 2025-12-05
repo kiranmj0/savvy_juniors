@@ -23,7 +23,7 @@ export default function About() {
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4">
                 <span className="bg-gradient-to-r from-gray-900 to-primary bg-clip-text text-transparent">About</span>  <span className="inline-block animate-text-reveal-delay">
                   <span className="text-primary font-extrabold">S</span>
-                  <span className="text-orange-500 font-extrabold">a</span>
+                  <span className="text-primary font-extrabold">a</span>
                   <span className="text-primary font-extrabold">vvy</span>
                   <span className="text-orange-500 font-extrabold ml-1">Juniors</span>
                 </span>

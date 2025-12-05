@@ -111,7 +111,12 @@
   }
 
   /* Consistent heading styles */
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-weight: 600;
     line-height: 1.2;
     letter-spacing: -0.025em;
@@ -137,7 +142,8 @@
   }
 
   /* Button consistency */
-  button, .btn {
+  button,
+  .btn {
     font-weight: 500;
     letter-spacing: 0.025em;
     transition: all 0.2s ease-in-out;
@@ -272,18 +278,24 @@ html {
 
 /* Nursery-themed animations */
 @keyframes gentle-bounce {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-5px);
   }
 }
 
 @keyframes soft-glow {
-  0%, 100% {
+
+  0%,
+  100% {
     box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
   }
+
   50% {
     box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
   }
@@ -305,7 +317,9 @@ html {
 
 /* Better mobile touch targets */
 @media (max-width: 768px) {
-  button, a {
+
+  button,
+  a {
     min-height: 44px;
     min-width: 44px;
   }
