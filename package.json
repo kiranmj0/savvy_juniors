@@ -13,7 +13,7 @@
   "scripts": {
     "dev": "vite",
     "build": "npm run build:client && npm run build:server",
-    "build:client": "vite build",
+    "build:client": "set VITE_BUILD_VERSION=%date:~-4,4%%date:~-10,2%%date:~-7,2%%time:~0,2%%time:~3,2%%time:~6,2% && vite build",
     "build:server": "vite build --config vite.config.server.ts",
     "start": "node dist/server/node-build.mjs",
     "test": "vitest --run",

@@ -63,16 +63,16 @@ export default function Header() {
               </Link>
 
               {/* Desktop Navigation */}
-              <nav className="hidden md:flex items-center gap-3 lg:gap-4 xl:gap-6">
+              <nav className="hidden md:flex items-center gap-2 lg:gap-4 xl:gap-6">
                 {navItems.map((item) => {
                   const isActive = location.pathname === item.href;
                   return (
                     <Link
                       key={item.href}
                       to={item.href}
-                      className={`relative px-2 py-2 text-xs lg:text-sm font-medium transition-all duration-300 transform whitespace-nowrap ${isActive
-                        ? 'text-primary bg-primary/10 rounded-md scale-105'
-                        : 'text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md hover:scale-105'
+                      className={`relative px-3 md:px-2 lg:px-3 py-2 h-9 flex items-center text-xs lg:text-sm font-medium transition-all duration-300 whitespace-nowrap rounded-md ${isActive
+                        ? 'text-primary bg-primary/15'
+                        : 'text-gray-700 hover:text-primary hover:bg-gray-50'
                         }`}
                     >
                       {item.label}
