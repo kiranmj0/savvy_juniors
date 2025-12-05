@@ -443,12 +443,12 @@ export default function Home() {
                   <span className="transition-colors">savvyjuniors.ae@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3 animate-slide-in-left" style={{ animationDelay: '0.8s' }}>
-                  <div className="bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg">
+                  <div className="bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg flex-shrink-0">
                     <span className="text-accent text-lg">
                       <i className="fas fa-map-marker-alt"></i>
                     </span>
                   </div>
-                  <span className="transition-colors ">Grandiose, Dubai Sports Village, Dubai sports city, Dubai, UAE</span>
+                  <span className="transition-colors text-sm sm:text-base">Grandiose, Dubai Sports Village, Dubai sports city, Dubai, UAE</span>
                 </div>
               </div>
               <Link

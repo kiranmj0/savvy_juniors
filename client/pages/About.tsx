@@ -55,25 +55,29 @@ export default function About() {
               </div>
             </div>
 
-            <div className="mt-8 lg:mt-12 p-4 sm:p-6 lg:p-8 bg-white rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 border border-gray-100">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                Our Learning Philosophy:
-              </h2>
-              <div className="text-left space-y-6 text-gray-600">
-                <div className="flex gap-3 items-start">
-                  <span className="text-primary text-xl mt-1"><i className="fas fa-child"></i></span>
+            <div className="mt-8 lg:mt-12 bg-primary/10 p-6 rounded-lg">
+              <h3 className="font-semibold text-gray-900 mb-3">Our Learning Philosophy:</h3>
+              <div className="space-y-4">
+                <div className="flex items-center gap-4">
+                  <span className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center">
+                    <i className="fas fa-child"></i>
+                  </span>
                   <div>
                     <strong className="text-gray-900">Child-led discovery:</strong> We follow children's interests while intentionally guiding learning through the EYFS framework and Reggio principles.
                   </div>
                 </div>
-                <div className="flex gap-3 items-start">
-                  <span className="text-primary text-xl mt-1"><i className="fas fa-brain"></i></span>
+                <div className="flex items-center gap-4">
+                  <span className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center">
+                    <i className="fas fa-brain"></i>
+                  </span>
                   <div>
                     <strong className="text-gray-900">Science-backed practice:</strong> With up to 90% of brain connections forming before age five, our programmes are thoughtfully designed to optimise this powerful period of development.
                   </div>
                 </div>
-                <div className="flex gap-3 items-start">
-                  <span className="text-primary text-xl mt-1"><i className="fas fa-heart"></i></span>
+                <div className="flex items-center gap-4">
+                  <span className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center">
+                    <i className="fas fa-heart"></i>
+                  </span>
                   <div>
                     <strong className="text-gray-900">Holistic growth:</strong> We support academic readiness, emotional intelligence, physical development, and social confidence—ensuring children thrive in every way.
                   </div>
