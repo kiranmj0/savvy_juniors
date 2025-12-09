@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getAssetPath } from "@/lib/assets";
+import { Link } from "react-router-dom";
 
 const Admissions = () => {
   return (
@@ -61,12 +62,12 @@ const Admissions = () => {
                 </div>
 
                 <div className="mt-8">
-                  <a
-                    href="/contact"
+                  <Link
+                    to="/contact"
                     className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-bold transition-colors inline-block"
                   >
                     Start Your Application
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -74,7 +75,7 @@ const Admissions = () => {
               <img
                 src={getAssetPath("admissions-hero.png")}
                 alt="Admissions at Savvy Juniors"
-                className="w-full h-48 sm:h-56 md:h-72 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg"
+                className="w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg"
               />
             </div>
           </div>

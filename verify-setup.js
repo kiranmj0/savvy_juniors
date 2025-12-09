@@ -7,7 +7,7 @@ const requiredImages = [
   'hero-banner.png',
   'newsletter-banner.jpg',
   'programs-overview.png',
-  'contact-us-hero.png',
+  'contact-us-hero.jpg',
   'admissions-hero.png',
   'testimonials-bg.png',
   'services-overview.png',

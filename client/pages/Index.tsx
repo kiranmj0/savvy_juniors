@@ -259,7 +259,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-3xl animate-pulse-slow"></div>
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-accent rounded-full animate-bounce-gentle flex items-center justify-center text-white text-xs font-bold">✨</div>
               <div className="absolute -bottom-6 -left-6 w-6 h-6 bg-primary rounded-full animate-bounce-gentle flex items-center justify-center text-white text-xs" style={{ animationDelay: '1s' }}>🎨</div>
-              <div className="relative h-64 sm:h-80 md:h-96 bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 group">
+              <div className="lg:mb-0 mb-12 relative h-64 sm:h-80 md:h-96 bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 group">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img
                   src={getAssetPath("hero-banner.png")}
@@ -390,12 +390,12 @@ export default function Home() {
               className={`transition-all duration-1000 transform ${isVisible['programs-image'] ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'
                 }`}
             >
-              <div className="relative group">
+              <div className="relative group mb-12">
                 <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img
                   src={getAssetPath("programs-overview.png")}
                   alt="Montessori-inspired learning environment and age-appropriate programs"
-                  className="relative w-full h-48 sm:h-56 md:h-64 lg:h-80 xl:h-96 object-cover object-center rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1"
+                  className="relative w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover object-center rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1"
                 />
               </div>
             </div>
@@ -469,9 +469,9 @@ export default function Home() {
               <div className="relative group">
                 <div className="absolute -inset-4 bg-gradient-to-r from-accent/30 to-white/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img
-                  src={getAssetPath("contact-us-hero.png")}
+                  src={getAssetPath("contact-us-hero.jpg")}
                   alt="Welcoming environment for families at Savvy Juniors nursery"
-                  className="relative w-full h-48 sm:h-56 md:h-64 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1"
+                  className="relative w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1"
                 />
               </div>
             </div>
@@ -498,7 +498,7 @@ export default function Home() {
                 <img
                   src={getAssetPath("admissions-hero.png")}
                   alt="Admissions process and onboarding at Savvy Juniors nursery"
-                  className="relative w-full h-48 sm:h-56 md:h-64 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1"
+                  className="relative w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1"
                 />
               </div>
             </div>

@@ -165,10 +165,10 @@ export default function Footer() {
           {/* Social Links & Copyright */}
           <div className="flex flex-col sm:flex-row justify-between items-center gap-6">
             <div className="flex gap-6 order-2 sm:order-1">
-              <a href="https://facebook.com/savvyjuniors" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors p-2 rounded-full hover:bg-white/10">
+              <a href="https://facebook.com/savvyjuniors.ae" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors p-2 rounded-full hover:bg-white/10">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="https://instagram.com/savvyjuniors" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors p-2 rounded-full hover:bg-white/10">
+              <a href="https://instagram.com/savvyjuniors.ae" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors p-2 rounded-full hover:bg-white/10">
                 <Instagram className="w-5 h-5" />
               </a>
               {/* <a href="https://twitter.com/savvyjuniors" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors p-2 rounded-full hover:bg-white/10">
