@@ -160,7 +160,7 @@ export default function Header() {
       {/* WhatsApp floating button */}
       <div className={`fixed right-4 bottom-24 z-40 transition-all duration-500 ${showSlideIn ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
         }`}>
-        <a href="https://wa.me/9971585708135" target="_blank" rel="noopener noreferrer" className="block">
+        <a href="https://wa.me/971585708135" target="_blank" rel="noopener noreferrer" className="block">
           <div className="bg-green-500 hover:bg-green-600 px-4 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 group cursor-pointer">
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">

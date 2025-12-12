@@ -67,7 +67,7 @@ export default function Footer() {
                 to="/contact"
                 className="block py-0 px-2 lg:py-1 transition-all text-white hover:font-bold text-sm"
               >
-                Contact Us
+                Contact
               </Link>
               <Link
                 to="/admissions"

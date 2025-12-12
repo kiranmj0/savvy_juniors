@@ -21,7 +21,21 @@ export default function Home() {
     seconds: 50,
   });
   const [isVisible, setIsVisible] = useState({});
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentProgramSlide, setCurrentProgramSlide] = useState(0);
   const observerRef = useRef(null);
+
+  const heroImages = [
+    { src: "hero-banner.jpg", alt: "Child coloring with crayons to write SAVVY - representing creativity and learning at Savvy Juniors Nursery" },
+    { src: "hero-banner2.png", alt: "Children engaged in learning activities at Savvy Juniors" },
+    { src: "hero-banner3.png", alt: "Nurturing environment for early childhood development at Savvy Juniors" }
+  ];
+
+  const programImages = [
+    { src: "programs-overview.jpg", alt: "Montessori-inspired learning environment and age-appropriate programs" },
+    { src: "programs-overview2.png", alt: "Interactive learning activities for children at Savvy Juniors" },
+    { src: "programs-overview3.png", alt: "Comprehensive early childhood development programs" }
+  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -48,6 +62,22 @@ export default function Home() {
 
     return () => clearInterval(timer);
   }, []);
+
+  useEffect(() => {
+    const slideTimer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+    }, 4000);
+
+    return () => clearInterval(slideTimer);
+  }, [heroImages.length]);
+
+  useEffect(() => {
+    const programSlideTimer = setInterval(() => {
+      setCurrentProgramSlide((prev) => (prev + 1) % programImages.length);
+    }, 4500);
+
+    return () => clearInterval(programSlideTimer);
+  }, [programImages.length]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -257,19 +287,33 @@ export default function Home() {
 
             <div className="relative animate-slide-in-right pb-0">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-3xl animate-pulse-slow"></div>
-              <div className="absolute -top-4 -right-4 w-8 h-8 bg-accent rounded-full animate-bounce-gentle flex items-center justify-center text-white text-xs font-bold">✨</div>
-              <div className="absolute -bottom-6 -left-6 w-6 h-6 bg-primary rounded-full animate-bounce-gentle flex items-center justify-center text-white text-xs" style={{ animationDelay: '1s' }}>🎨</div>
+              <div className="absolute -top-4 -right-4 w-8 h-8 bg-accent rounded-full animate-bounce-gentle flex items-center justify-center text-white text-xs font-bold z-20">✨</div>
+              <div className="absolute -bottom-6 -left-6 w-6 h-6 bg-primary rounded-full animate-bounce-gentle flex items-center justify-center text-white text-xs z-20" style={{ animationDelay: '1s' }}>🎨</div>
               <div className="lg:mb-0 mb-12 relative h-64 sm:h-80 md:h-96 bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 group">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <img
-                  src={getAssetPath("hero-banner.png")}
-                  alt="Child coloring with crayons to write SAVVY - representing creativity and learning at Savvy Juniors Nursery"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                {/* <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-3">
-                  <p className="text-sm font-semibold text-gray-800">Ages 45 days - 5 years</p>
-                  <p className="text-xs text-gray-600">British Curriculum • Montessori Approach</p>
-                </div> */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                {heroImages.map((image, index) => (
+                  <img
+                    key={index}
+                    src={getAssetPath(image.src)}
+                    alt={image.alt}
+                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ${index === currentSlide
+                      ? 'opacity-100 scale-100'
+                      : 'opacity-0 scale-105'
+                      }`}
+                  />
+                ))}
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 gap-2 z-20 hidden lg:flex">
+                  {heroImages.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentSlide(index)}
+                      className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentSlide
+                        ? 'bg-white scale-125'
+                        : 'bg-white/50 hover:bg-white/75'
+                        }`}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -297,7 +341,7 @@ export default function Home() {
                 className="relative w-full rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1"
                 onError={(e) => {
                   console.error('Image failed to load:', e.currentTarget.src);
-                  e.currentTarget.src = getAssetPath("hero-banner.png");
+                  e.currentTarget.src = getAssetPath("hero-banner.jpg");
                 }}
               />
             </div>
@@ -392,11 +436,31 @@ export default function Home() {
             >
               <div className="relative group mb-12">
                 <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <img
-                  src={getAssetPath("programs-overview.png")}
-                  alt="Montessori-inspired learning environment and age-appropriate programs"
-                  className="relative w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover object-center rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1"
-                />
+                <div className="relative w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1">
+                  {programImages.map((image, index) => (
+                    <img
+                      key={index}
+                      src={getAssetPath(image.src)}
+                      alt={image.alt}
+                      className={`absolute inset-0 w-full h-full object-cover object-center transition-all duration-1000 ${index === currentProgramSlide
+                        ? 'opacity-100 scale-100'
+                        : 'opacity-0 scale-105'
+                        }`}
+                    />
+                  ))}
+                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 gap-2 z-20 hidden lg:flex">
+                    {programImages.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => setCurrentProgramSlide(index)}
+                        className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentProgramSlide
+                          ? 'bg-white scale-125'
+                          : 'bg-white/50 hover:bg-white/75'
+                          }`}
+                      />
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>

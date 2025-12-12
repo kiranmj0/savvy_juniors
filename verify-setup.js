@@ -4,9 +4,9 @@ const path = require('path');
 
 const publicDir = path.join(__dirname, 'public');
 const requiredImages = [
-  'hero-banner.png',
+  'hero-banner.jpg',
   'newsletter-banner.jpg',
-  'programs-overview.png',
+  'programs-overview.jpg',
   'contact-us-hero.jpg',
   'admissions-hero.png',
   'testimonials-bg.png',

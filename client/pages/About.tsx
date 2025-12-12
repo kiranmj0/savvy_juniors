@@ -55,30 +55,30 @@ export default function About() {
               </div>
             </div>
 
-            <div className="mt-8 lg:mt-12 bg-primary/10 p-6 rounded-lg">
-              <h3 className="font-semibold text-gray-900 mb-3">Our Learning Philosophy:</h3>
-              <div className="space-y-4">
-                <div className="flex items-center gap-4">
-                  <span className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center">
+            <div className="mt-8 lg:mt-12 bg-primary/10 p-4 md:p-6 rounded-lg">
+              <h3 className="font-semibold text-gray-900 mb-4 text-base md:text-lg">Our Learning Philosophy:</h3>
+              <div className="space-y-3 md:space-y-4">
+                <div className="flex items-start md:items-center gap-3 md:gap-4">
+                  <span className="w-8 h-8 md:w-10 md:h-10 bg-primary text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm">
                     <i className="fas fa-child"></i>
                   </span>
-                  <div>
+                  <div className="text-sm md:text-base">
                     <strong className="text-gray-900">Child-led discovery:</strong> We follow children's interests while intentionally guiding learning through the EYFS framework and Reggio principles.
                   </div>
                 </div>
-                <div className="flex items-center gap-4">
-                  <span className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center">
+                <div className="flex items-start md:items-center gap-3 md:gap-4">
+                  <span className="w-8 h-8 md:w-10 md:h-10 bg-primary text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm">
                     <i className="fas fa-brain"></i>
                   </span>
-                  <div>
+                  <div className="text-sm md:text-base">
                     <strong className="text-gray-900">Science-backed practice:</strong> With up to 90% of brain connections forming before age five, our programmes are thoughtfully designed to optimise this powerful period of development.
                   </div>
                 </div>
-                <div className="flex items-center gap-4">
-                  <span className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center">
+                <div className="flex items-start md:items-center gap-3 md:gap-4">
+                  <span className="w-8 h-8 md:w-10 md:h-10 bg-primary text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm">
                     <i className="fas fa-heart"></i>
                   </span>
-                  <div>
+                  <div className="text-sm md:text-base">
                     <strong className="text-gray-900">Holistic growth:</strong> We support academic readiness, emotional intelligence, physical development, and social confidence—ensuring children thrive in every way.
                   </div>
                 </div>

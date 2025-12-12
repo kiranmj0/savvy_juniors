@@ -58,7 +58,7 @@ ${formData.message}
 
 ---
 _Sent via Savvy Juniors Contact Form_`;
-    const whatsappUrl = `https://wa.me/9971585708135?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/971585708135?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
     setShowSendOptions(false);
     setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
@@ -184,7 +184,7 @@ This enquiry was sent via the Savvy Juniors website contact form.`;
                       <div>
                         <h3 className="font-semibold text-gray-900 text-base">WhatsApp</h3>
                         <a
-                          href="https://wa.me/9971585708135"
+                          href="https://wa.me/971585708135"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-sm text-gray-700 hover:text-green-600 font-medium transition-colors"
