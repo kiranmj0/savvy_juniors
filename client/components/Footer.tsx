@@ -98,7 +98,7 @@ export default function Footer() {
                 className="flex items-center gap-2 py-0 lg:py-1 transition-all text-white hover:font-bold text-sm"
               >
                 <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                <span className="text-sm sm:text-sm leading-none">Grandiose, Dubai Sports Village, Dubai sports city, Dubai, UAE</span>
+                <span className="text-sm sm:text-sm leading-none">Grandiose, Dubai Sports Village, Dubai Sports City, Dubai, UAE</span>
               </a>
               {/* Email */}
               <a

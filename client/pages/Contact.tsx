@@ -154,7 +154,7 @@ This enquiry was sent via the Savvy Juniors website contact form.`;
                           rel="noopener noreferrer"
                           className="text-sm text-gray-700 hover:text-primary font-medium transition-colors"
                         >
-                          Grandiose, Dubai Sports Village, Dubai sports city,<br />Dubai, UAE
+                          Grandiose, Dubai Sports Village, Dubai Sports City,<br />Dubai, UAE
                         </a>
                       </div>
                     </div>

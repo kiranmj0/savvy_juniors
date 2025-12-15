@@ -512,7 +512,7 @@ export default function Home() {
                       <i className="fas fa-map-marker-alt"></i>
                     </span>
                   </div>
-                  <span className="transition-colors text-sm sm:text-base">Grandiose, Dubai Sports Village, Dubai sports city, Dubai, UAE</span>
+                  <span className="transition-colors text-sm sm:text-base">Grandiose, Dubai Sports Village, Dubai Sports City, Dubai, UAE</span>
                 </div>
               </div>
               <Link
