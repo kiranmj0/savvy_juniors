@@ -30,7 +30,7 @@ const Programs = () => {
             </div>
             <div className="lg:order-first animate-slide-in-left" style={{ animationDelay: "0.1s" }}>
               <img
-                src={getAssetPath("services-overview.png")}
+                src={getAssetPath("No-Image-Placeholder.svg")}
                 alt="Gentle Montessori infant care environment with sensory play materials"
                 className="w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500"
               />
@@ -49,7 +49,7 @@ const Programs = () => {
             </div>
             <div className="animate-slide-in-right" style={{ animationDelay: "0.4s" }}>
               <img
-                src={getAssetPath("gallery-showcase.png")}
+                src={getAssetPath("No-Image-Placeholder.svg")}
                 alt="Toddlers exploring Montessori practical life activities and movement"
                 className="w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500"
               />
@@ -68,7 +68,7 @@ const Programs = () => {
             </div>
             <div className="lg:order-first animate-slide-in-left" style={{ animationDelay: "0.6s" }}>
               <img
-                src={getAssetPath("events-calendar.png")}
+                src={getAssetPath("No-Image-Placeholder.svg")}
                 alt="Early learners engaged in Montessori language and numeracy activities"
                 className="w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500"
               />
@@ -87,7 +87,7 @@ const Programs = () => {
             </div>
             <div className="animate-slide-in-right" style={{ animationDelay: "0.8s" }}>
               <img
-                src={getAssetPath("staff-team.jpg")}
+                src={getAssetPath("No-Image-Placeholder.svg")}
                 alt="Foundation Stage children working with Montessori materials and British curriculum"
                 className="w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500"
               />
@@ -106,7 +106,7 @@ const Programs = () => {
             </div>
             <div className="lg:order-first animate-slide-in-left" style={{ animationDelay: "1.0s" }}>
               <img
-                src={getAssetPath("facilities-tour.png")}
+                src={getAssetPath("No-Image-Placeholder.svg")}
                 alt="School-ready children in Montessori-prepared environment with British EYFS framework"
                 className="w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500"
               />

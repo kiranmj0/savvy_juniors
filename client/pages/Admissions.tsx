@@ -73,7 +73,7 @@ const Admissions = () => {
             </div>
             <div>
               <img
-                src={getAssetPath("admissions-hero.png")}
+                src={getAssetPath("No-Image-Placeholder.svg")}
                 alt="Admissions at Savvy Juniors"
                 className="w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg"
               />

@@ -26,15 +26,15 @@ export default function Home() {
   const observerRef = useRef(null);
 
   const heroImages = [
-    { src: "hero-banner.jpg", alt: "Child coloring with crayons to write SAVVY - representing creativity and learning at Savvy Juniors Nursery" },
-    { src: "hero-banner2.png", alt: "Children engaged in learning activities at Savvy Juniors" },
-    { src: "hero-banner3.png", alt: "Nurturing environment for early childhood development at Savvy Juniors" }
+    { src: "No-Image-Placeholder.svg", alt: "Child coloring with crayons to write SAVVY - representing creativity and learning at Savvy Juniors Nursery" },
+    { src: "No-Image-Placeholder.svg", alt: "Children engaged in learning activities at Savvy Juniors" },
+    { src: "No-Image-Placeholder.svg", alt: "Nurturing environment for early childhood development at Savvy Juniors" }
   ];
 
   const programImages = [
-    { src: "programs-overview.jpg", alt: "Montessori-inspired learning environment and age-appropriate programs" },
-    { src: "programs-overview2.png", alt: "Interactive learning activities for children at Savvy Juniors" },
-    { src: "programs-overview3.png", alt: "Comprehensive early childhood development programs" }
+    { src: "No-Image-Placeholder.svg", alt: "Montessori-inspired learning environment and age-appropriate programs" },
+    { src: "No-Image-Placeholder.svg", alt: "Interactive learning activities for children at Savvy Juniors" },
+    { src: "No-Image-Placeholder.svg", alt: "Comprehensive early childhood development programs" }
   ];
 
   useEffect(() => {
@@ -139,8 +139,7 @@ export default function Home() {
   const classes = [
     {
       id: 1,
-      image:
-        "https://images.unsplash.com/photo-1427504494785-cdecdca3e254?w=400&h=300&fit=crop",
+      image: getAssetPath("No-Image-Placeholder.svg"),
       title: "Practical Activities",
       description:
         "Hands-on learning experiences that develop motor skills and cognitive abilities through play.",
@@ -150,8 +149,7 @@ export default function Home() {
     },
     {
       id: 2,
-      image:
-        "https://images.unsplash.com/photo-1503454537688-e6017211a1d5?w=400&h=300&fit=crop",
+      image: getAssetPath("No-Image-Placeholder.svg"),
       title: "Practical Activities",
       description:
         "Structured play-based learning that encourages exploration and discovery at every stage.",
@@ -161,8 +159,7 @@ export default function Home() {
     },
     {
       id: 3,
-      image:
-        "https://images.unsplash.com/photo-1488521787991-ed7fe14e6104?w=400&h=300&fit=crop",
+      image: getAssetPath("No-Image-Placeholder.svg"),
       title: "Practical Activities",
       description:
         "Creative and engaging activities that support holistic development of young learners.",
@@ -175,8 +172,7 @@ export default function Home() {
   const blogPosts = [
     {
       id: 1,
-      image:
-        "https://images.unsplash.com/photo-1503454537688-e6017211a1d5?w=300&h=200&fit=crop",
+      image: getAssetPath("No-Image-Placeholder.svg"),
       title: "Weekly Drawing Class",
       date: "April 19, 2019",
       author: "Admin",
@@ -185,8 +181,7 @@ export default function Home() {
     },
     {
       id: 2,
-      image:
-        "https://images.unsplash.com/photo-1488521787991-ed7fe14e6104?w=300&h=200&fit=crop",
+      image: getAssetPath("No-Image-Placeholder.svg"),
       title: "Playing With Puzzle",
       date: "April 19, 2019",
       author: "Admin",
@@ -195,8 +190,7 @@ export default function Home() {
     },
     {
       id: 3,
-      image:
-        "https://images.unsplash.com/photo-1427504494785-cdecdca3e254?w=300&h=200&fit=crop",
+      image: getAssetPath("No-Image-Placeholder.svg"),
       title: "Match Puzzle in Class",
       date: "April 19, 2019",
       author: "Admin",
@@ -205,8 +199,7 @@ export default function Home() {
     },
     {
       id: 4,
-      image:
-        "https://images.unsplash.com/photo-1473093295203-cad00df16e50?w=300&h=200&fit=crop",
+      image: getAssetPath("No-Image-Placeholder.svg"),
       title: "How to Match Generally",
       date: "April 19, 2019",
       author: "Admin",
@@ -336,12 +329,12 @@ export default function Home() {
               <div className="absolute -inset-4 bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl animate-pulse-gentle"></div>
               <div className="absolute top-4 right-4 w-4 h-4 bg-accent rounded-full animate-ping"></div>
               <img
-                src={getAssetPath("newsletter-banner.jpg")}
+                src={getAssetPath("No-Image-Placeholder.svg")}
                 alt="Children engaged in Montessori learning activities at Savvy Juniors"
                 className="relative w-full rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1"
                 onError={(e) => {
                   console.error('Image failed to load:', e.currentTarget.src);
-                  e.currentTarget.src = getAssetPath("hero-banner.jpg");
+                  e.currentTarget.src = getAssetPath("No-Image-Placeholder.svg");
                 }}
               />
             </div>
@@ -533,7 +526,7 @@ export default function Home() {
               <div className="relative group">
                 <div className="absolute -inset-4 bg-gradient-to-r from-accent/30 to-white/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img
-                  src={getAssetPath("contact-us-hero.jpg")}
+                  src={getAssetPath("No-Image-Placeholder.svg")}
                   alt="Welcoming environment for families at Savvy Juniors nursery"
                   className="relative w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1"
                 />
@@ -560,7 +553,7 @@ export default function Home() {
                 <div className="absolute -inset-3 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="absolute top-4 left-4 w-4 h-4 bg-primary rounded-full animate-ping"></div>
                 <img
-                  src={getAssetPath("admissions-hero.png")}
+                  src={getAssetPath("No-Image-Placeholder.svg")}
                   alt="Admissions process and onboarding at Savvy Juniors nursery"
                   className="relative w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1"
                 />

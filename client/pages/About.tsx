@@ -33,7 +33,7 @@ export default function About() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch mb-8">
               <div className="order-2 lg:order-1 px-4 sm:px-0">
                 <img
-                  src={getAssetPath("testimonials-bg.png")}
+                  src={getAssetPath("No-Image-Placeholder.svg")}
                   alt="About Savvy Juniors"
                   className="w-full h-48 sm:h-56 md:h-96 lg:h-full object-cover rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105"
                 />
