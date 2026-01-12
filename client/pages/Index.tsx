@@ -287,7 +287,7 @@ export default function Home() {
                 {heroImages.map((image, index) => (
                   <img
                     key={index}
-                    src={getAssetPath(image.src)}
+                    src={getAssetPath("HomePic.png")}
                     alt={image.alt}
                     className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ${index === currentSlide
                       ? 'opacity-100 scale-100'
@@ -295,7 +295,7 @@ export default function Home() {
                       }`}
                   />
                 ))}
-                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 gap-2 z-20 hidden lg:flex">
+                {/* <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 gap-2 z-20 hidden lg:flex">
                   {heroImages.map((_, index) => (
                     <button
                       key={index}
@@ -306,7 +306,7 @@ export default function Home() {
                         }`}
                     />
                   ))}
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -329,7 +329,7 @@ export default function Home() {
               <div className="absolute -inset-4 bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl animate-pulse-gentle"></div>
               <div className="absolute top-4 right-4 w-4 h-4 bg-accent rounded-full animate-ping"></div>
               <img
-                src={getAssetPath("No-Image-Placeholder.svg")}
+                src={getAssetPath("AboutUs.png")}
                 alt="Children engaged in Montessori learning activities at Savvy Juniors"
                 className="relative w-full rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1"
                 onError={(e) => {
@@ -433,7 +433,7 @@ export default function Home() {
                   {programImages.map((image, index) => (
                     <img
                       key={index}
-                      src={getAssetPath(image.src)}
+                      src={getAssetPath("programsPic.png")}
                       alt={image.alt}
                       className={`absolute inset-0 w-full h-full object-cover object-center transition-all duration-1000 ${index === currentProgramSlide
                         ? 'opacity-100 scale-100'
@@ -441,7 +441,7 @@ export default function Home() {
                         }`}
                     />
                   ))}
-                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 gap-2 z-20 hidden lg:flex">
+                  {/* <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 gap-2 z-20 hidden lg:flex">
                     {programImages.map((_, index) => (
                       <button
                         key={index}
@@ -452,7 +452,7 @@ export default function Home() {
                           }`}
                       />
                     ))}
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -526,7 +526,7 @@ export default function Home() {
               <div className="relative group">
                 <div className="absolute -inset-4 bg-gradient-to-r from-accent/30 to-white/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <img
-                  src={getAssetPath("No-Image-Placeholder.svg")}
+                  src={getAssetPath("contactPic.png")}
                   alt="Welcoming environment for families at Savvy Juniors nursery"
                   className="relative w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1"
                 />
@@ -553,7 +553,7 @@ export default function Home() {
                 <div className="absolute -inset-3 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="absolute top-4 left-4 w-4 h-4 bg-primary rounded-full animate-ping"></div>
                 <img
-                  src={getAssetPath("No-Image-Placeholder.svg")}
+                  src={getAssetPath("AdmissionPic.png")}
                   alt="Admissions process and onboarding at Savvy Juniors nursery"
                   className="relative w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1"
                 />
