@@ -331,7 +331,7 @@ export default function Home() {
               <img
                 src={getAssetPath("AboutUs.png")}
                 alt="Children engaged in Montessori learning activities at Savvy Juniors"
-                className="relative w-full rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1"
+                className="relative w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1"
                 onError={(e) => {
                   console.error('Image failed to load:', e.currentTarget.src);
                   e.currentTarget.src = getAssetPath("No-Image-Placeholder.svg");
