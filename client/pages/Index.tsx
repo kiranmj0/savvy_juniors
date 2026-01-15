@@ -253,7 +253,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
                 </Link>
                 <a
-                  href="https://maps.google.com/?q=Grandiose,Dubai+Sports+Village,Dubai,UAE"
+                  href="https://maps.app.goo.gl/U27fcS7pT5nN1taT9"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 flex items-center justify-center gap-2 group hover:shadow-lg hover:scale-105"

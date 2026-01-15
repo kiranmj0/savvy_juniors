@@ -149,7 +149,7 @@ This enquiry was sent via the Savvy Juniors website contact form.`;
                       <div>
                         <h3 className="font-semibold text-gray-900 text-base">Address</h3>
                         <a
-                          href="https://maps.google.com/?q=Grandiose,Dubai+Sports+Village,Dubai,UAE"
+                          href="https://maps.app.goo.gl/U27fcS7pT5nN1taT9"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-sm text-gray-700 hover:text-primary font-medium transition-colors"

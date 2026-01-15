@@ -42,7 +42,7 @@ export default function Header() {
             <div className="flex items-center gap-4 lg:gap-8">
               {/* Logo */}
               <Link to="/" className="flex items-center gap-3 group">
-                {!logoFailed ? (
+                {logoFailed ? (
                   <img
                     src={getAssetPath("navvy_image.png")}
                     alt="Savvy Juniors"
@@ -54,9 +54,7 @@ export default function Header() {
                   />
                 ) : (
                   <div className="flex items-center gap-1 group-hover:scale-105 transition-transform duration-300">
-                    <span className="text-xl md:text-2xl font-bold bg-gradient-to-r from-blue-600 to-primary bg-clip-text text-transparent">S</span>
-                    <span className="text-xl md:text-2xl font-bold bg-gradient-to-r from-accent to-orange-500 bg-clip-text text-transparent">a</span>
-                    <span className="text-xl md:text-2xl font-bold bg-gradient-to-r from-blue-600 to-primary bg-clip-text text-transparent">vvy</span>
+                    <span className="text-xl md:text-2xl font-bold bg-gradient-to-r from-blue-600 to-primary bg-clip-text text-transparent">Savvy</span>
                     <span className="text-xl md:text-2xl font-bold bg-gradient-to-r from-accent to-orange-500 bg-clip-text text-transparent ml-1">Juniors</span>
                   </div>
                 )}

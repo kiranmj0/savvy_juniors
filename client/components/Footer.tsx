@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
 import { getAssetPath } from "@/lib/assets";
+import { useState } from "react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const [logoFailed, setLogoFailed] = useState(false);
 
   return (
     <footer className="footer-bg relative text-white bg-primary">
@@ -13,26 +15,21 @@ export default function Footer() {
           <div className="md:col-span-3 lg:col-span-1 text-center md:text-left">
             <div className="flex items-center gap-3 mb-4">
               <div className="relative group bg-white rounded-full p-3 shadow-lg">
-                <img
-                  src={getAssetPath("navvy_image.png")}
-                  alt="Savvy Juniors"
-                  className="relative h-20 w-20 object-contain transform transition-transform duration-500 group-hover:scale-110"
-                  loading="lazy"
-                  decoding="async"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                    const nextEl = e.currentTarget.nextElementSibling as HTMLElement;
-                    if (nextEl) nextEl.style.display = 'flex';
-                  }}
-                />
-
-                {/* Fallback text logo */}
-                <div className="hidden items-center gap-1">
-                  <span className="text-2xl font-bold text-blue-600">S</span>
-                  <span className="text-2xl font-bold text-orange-500">a</span>
-                  <span className="text-2xl font-bold text-blue-600">vvy</span>
-                  <span className="text-2xl font-bold text-orange-500 ml-1">Juniors</span>
-                </div>
+                {logoFailed ? (
+                  <img
+                    src={getAssetPath("navvy_image.png")}
+                    alt="Savvy Juniors"
+                    className="h-20 w-20 object-contain transform transition-transform duration-500 group-hover:scale-110"
+                    loading="lazy"
+                    decoding="async"
+                    onError={() => setLogoFailed(true)}
+                  />
+                ) : (
+                  <div className="flex items-center gap-1">
+                    <span className="text-2xl font-bold text-primary">Savvy</span>
+                    <span className="text-2xl font-bold text-orange-500 ml-1">Juniors</span>
+                  </div>
+                )}
               </div>
             </div>
 
@@ -92,7 +89,7 @@ export default function Footer() {
               </a>
               {/* Location */}
               <a
-                href="https://maps.google.com/?q=Grandiose,Dubai+Sports+Village,Dubai,UAE"
+                href="https://maps.app.goo.gl/U27fcS7pT5nN1taT9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 py-0 lg:py-1 transition-all text-white hover:font-bold text-sm"
