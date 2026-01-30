@@ -42,7 +42,7 @@ ${formData.message}`;
     setShowSendOptions(false);
     setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
     setSubmitStatus('success');
-    setStatusMessage('SMS app opened successfully! Please send the message from your SMS application.');
+    setStatusMessage('Your message has been prepared successfully. Your SMS application will open now. Kindly review and click Send to complete the submission.');
   };
 
   const handleWhatsAppSend = () => {
@@ -63,7 +63,7 @@ _Sent via Savvy Juniors Contact Form_`;
     setShowSendOptions(false);
     setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
     setSubmitStatus('success');
-    setStatusMessage('Message sent via WhatsApp successfully!');
+    setStatusMessage('Your message has been prepared successfully. WhatsApp will open now. Kindly review and click Send to complete the submission.');
   };
 
   const handleEmailSend = () => {
@@ -96,7 +96,7 @@ This enquiry was sent via the Savvy Juniors website contact form.`;
     setShowSendOptions(false);
     setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
     setSubmitStatus('success');
-    setStatusMessage('Email client opened successfully! Please send the email from your email application.');
+    setStatusMessage('Your message has been prepared successfully. Your email application will open now. Kindly review and click Send to complete the submission.');
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

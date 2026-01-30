@@ -32,7 +32,7 @@ export default function Header() {
   return (
     <>
       <header className={`fixed w-full top-0 z-50 transition-all duration-500 ${scrolled
-        ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200/50'
+        ? 'bg-white backdrop-blur-md shadow-lg border-b border-gray-200/50'
         : 'bg-white shadow-sm'
         }`}>
         <div className="max-w-7xl lg:max-w-none mx-auto p-4 sm:px-6 lg:px-8">
@@ -42,20 +42,20 @@ export default function Header() {
             <div className="flex items-center gap-4 lg:gap-8">
               {/* Logo */}
               <Link to="/" className="flex items-center gap-3 group">
-                {logoFailed ? (
+                {!logoFailed ? (
                   <img
                     src={getAssetPath("navvy_image.png")}
                     alt="Savvy Juniors"
-                    className={`p-1 md:p-2 object-contain transition-all duration-300 group-hover:scale-105 ${scrolled ? 'h-20 w-20 md:h-24 md:w-24' : 'h-24 w-24 md:h-28 md:w-28'
+                    className={`object-contain transition-all duration-300 group-hover:scale-105 ${scrolled ? 'h-36 w-36 md:h-40 md:w-40' : 'h-48 w-48 md:h-44 md:w-44'
                       }`}
                     loading="eager"
                     decoding="async"
                     onError={() => setLogoFailed(true)}
                   />
                 ) : (
-                  <div className="flex items-center gap-1 group-hover:scale-105 transition-transform duration-300">
-                    <span className="text-xl md:text-2xl font-bold bg-gradient-to-r from-blue-600 to-primary bg-clip-text text-transparent">Savvy</span>
-                    <span className="text-xl md:text-2xl font-bold bg-gradient-to-r from-accent to-orange-500 bg-clip-text text-transparent ml-1">Juniors</span>
+                  <div className="flex items-center gap-1">
+                    <span className="text-2xl font-bold text-primary">Savvy</span>
+                    <span className="text-2xl font-bold text-orange-500 ml-1">Juniors</span>
                   </div>
                 )}
               </Link>

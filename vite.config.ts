@@ -30,6 +30,8 @@ export default defineConfig(({ mode }) => ({
         entryFileNames: 'assets/js/[name]-[hash].js',
       },
     },
+    target: 'esnext',
+    minify: 'esbuild',
   },
   plugins: [react(), expressPlugin()],
   resolve: {

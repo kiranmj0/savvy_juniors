@@ -15,11 +15,11 @@ export default function Footer() {
           <div className="md:col-span-3 lg:col-span-1 text-center md:text-left">
             <div className="flex items-center gap-3 mb-4">
               <div className="relative group bg-white rounded-full p-3 shadow-lg">
-                {logoFailed ? (
+                {!logoFailed ? (
                   <img
                     src={getAssetPath("navvy_image.png")}
                     alt="Savvy Juniors"
-                    className="h-20 w-20 object-contain transform transition-transform duration-500 group-hover:scale-110"
+                    className="h-32 w-32 object-contain transform transition-transform duration-500 group-hover:scale-110"
                     loading="lazy"
                     decoding="async"
                     onError={() => setLogoFailed(true)}

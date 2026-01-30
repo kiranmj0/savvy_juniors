@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import OptimizedImage from "@/components/OptimizedImage";
+import { useImagePreloader } from "@/hooks/use-image-preloader";
 import { getAssetPath } from "@/lib/assets";
 import {
   Users,
@@ -14,6 +16,8 @@ import {
 } from "lucide-react";
 
 export default function Home() {
+  // Preload critical images
+  useImagePreloader();
   const [timeLeft, setTimeLeft] = useState({
     days: 210,
     hours: 8,
@@ -284,17 +288,13 @@ export default function Home() {
               <div className="absolute -bottom-6 -left-6 w-6 h-6 bg-primary rounded-full animate-bounce-gentle flex items-center justify-center text-white text-xs z-20" style={{ animationDelay: '1s' }}>🎨</div>
               <div className="lg:mb-0 mb-12 relative h-64 sm:h-80 md:h-96 bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 group">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
-                {heroImages.map((image, index) => (
-                  <img
-                    key={index}
-                    src={getAssetPath("HomePic.png")}
-                    alt={image.alt}
-                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ${index === currentSlide
-                      ? 'opacity-100 scale-100'
-                      : 'opacity-0 scale-105'
-                      }`}
-                  />
-                ))}
+                <OptimizedImage
+                  src="HomePic.png"
+                  alt="Children engaged in learning activities at Savvy Juniors nursery"
+                  className="absolute inset-0 w-full h-full object-cover"
+                  priority={true}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
+                />
                 {/* <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 gap-2 z-20 hidden lg:flex">
                   {heroImages.map((_, index) => (
                     <button
@@ -328,14 +328,12 @@ export default function Home() {
             >
               <div className="absolute -inset-4 bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl animate-pulse-gentle"></div>
               <div className="absolute top-4 right-4 w-4 h-4 bg-accent rounded-full animate-ping"></div>
-              <img
-                src={getAssetPath("AboutUs.png")}
+              <OptimizedImage
+                src="AboutUs.png"
                 alt="Children engaged in Montessori learning activities at Savvy Juniors"
                 className="relative w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1"
-                onError={(e) => {
-                  console.error('Image failed to load:', e.currentTarget.src);
-                  e.currentTarget.src = getAssetPath("No-Image-Placeholder.svg");
-                }}
+                priority={true}
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
               />
             </div>
 
@@ -429,31 +427,13 @@ export default function Home() {
             >
               <div className="relative group mb-12">
                 <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="relative w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1">
-                  {programImages.map((image, index) => (
-                    <img
-                      key={index}
-                      src={getAssetPath("programsPic.png")}
-                      alt={image.alt}
-                      className={`absolute inset-0 w-full h-full object-cover object-center transition-all duration-1000 ${index === currentProgramSlide
-                        ? 'opacity-100 scale-100'
-                        : 'opacity-0 scale-105'
-                        }`}
-                    />
-                  ))}
-                  {/* <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 gap-2 z-20 hidden lg:flex">
-                    {programImages.map((_, index) => (
-                      <button
-                        key={index}
-                        onClick={() => setCurrentProgramSlide(index)}
-                        className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentProgramSlide
-                          ? 'bg-white scale-125'
-                          : 'bg-white/50 hover:bg-white/75'
-                          }`}
-                      />
-                    ))}
-                  </div> */}
-                </div>
+                <OptimizedImage
+                  src="programsPic.png"
+                  alt="Montessori-inspired learning environment and age-appropriate programs"
+                  className="relative w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1"
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
+                />
               </div>
             </div>
           </div>
@@ -525,10 +505,12 @@ export default function Home() {
             >
               <div className="relative group">
                 <div className="absolute -inset-4 bg-gradient-to-r from-accent/30 to-white/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <img
-                  src={getAssetPath("contactPic.png")}
+                <OptimizedImage
+                  src="contactPic.png"
                   alt="Welcoming environment for families at Savvy Juniors nursery"
                   className="relative w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1"
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
                 />
               </div>
             </div>
@@ -552,10 +534,12 @@ export default function Home() {
               <div className="relative group">
                 <div className="absolute -inset-3 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="absolute top-4 left-4 w-4 h-4 bg-primary rounded-full animate-ping"></div>
-                <img
-                  src={getAssetPath("AdmissionPic.png")}
+                <OptimizedImage
+                  src="AdmissionPic.png"
                   alt="Admissions process and onboarding at Savvy Juniors nursery"
                   className="relative w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1"
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
                 />
               </div>
             </div>
