@@ -32,7 +32,7 @@ export default function Header() {
   return (
     <>
       <header className={`fixed w-full top-0 z-50 transition-all duration-500 ${scrolled
-        ? 'bg-white backdrop-blur-md shadow-lg border-b border-gray-200/50'
+        ? 'bg-white/90 backdrop-blur-md shadow-lg border-b border-gray-200/50'
         : 'bg-white shadow-sm'
         }`}>
         <div className="max-w-7xl lg:max-w-none mx-auto p-4 sm:px-6 lg:px-8">
