@@ -15,7 +15,7 @@
     "build": "npm run build:client && npm run build:server",
     "predeploy": "node scripts/deploy.js",
     "deploy": "npm run predeploy && npm run build",
-    "build:client": "set VITE_BUILD_TIMESTAMP=%date:~-4,4%%date:~-10,2%%date:~-7,2%%time:~0,2%%time:~3,2%%time:~6,2% && vite build",
+    "build:client": "vite build",
     "build:server": "vite build --config vite.config.server.ts",
     "start": "node dist/server/node-build.mjs",
     "test": "vitest --run",
