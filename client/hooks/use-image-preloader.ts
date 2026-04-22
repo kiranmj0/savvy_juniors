@@ -3,11 +3,11 @@ import { preloadImages } from '@/lib/assets';
 
 // Critical images that should be preloaded immediately
 const CRITICAL_IMAGES = [
-  'HomePic.png',
-  'AboutUs.png',
-  'programsPic.png',
-  'contactPic.png',
-  'AdmissionPic.png'
+  'HomePic.webp',
+  'AboutUs.webp',
+  'programsPic.webp',
+  'contactPic.webp',
+  'AdmissionPic.webp'
 ];
 
 export function useImagePreloader() {

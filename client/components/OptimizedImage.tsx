@@ -24,12 +24,11 @@ export default function OptimizedImage({
 }: OptimizedImageProps) {
   const [isLoaded, setIsLoaded] = useState(false);
   const [hasError, setHasError] = useState(false);
-  const [imageSrc, setImageSrc] = useState<string>('');
   const imgRef = useRef<HTMLImageElement>(null);
 
+  const finalSrc = bustCache ? `${getAssetPath(src)}?v=${Date.now()}` : getAssetPath(src);
+
   useEffect(() => {
-    const finalSrc = bustCache ? `${getAssetPath(src)}?v=${Date.now()}` : getAssetPath(src);
-    
     // Preload critical images
     if (priority) {
       const preloadLink = document.createElement('link');
@@ -46,25 +45,17 @@ export default function OptimizedImage({
         }
       };
     }
-  }, [src, priority, bustCache, sizes]);
+  }, [finalSrc, priority, sizes]);
 
-  useEffect(() => {
-    const finalSrc = bustCache ? `${getAssetPath(src)}?v=${Date.now()}` : getAssetPath(src);
-    
-    // Create new image to test loading
-    const img = new Image();
-    img.onload = () => {
-      setImageSrc(finalSrc);
-      setIsLoaded(true);
-      setHasError(false);
-    };
-    img.onerror = () => {
-      setImageSrc(getAssetPath(placeholder));
-      setHasError(true);
-      setIsLoaded(true);
-    };
-    img.src = finalSrc;
-  }, [src, bustCache, placeholder]);
+  const handleLoad = () => {
+    setIsLoaded(true);
+    setHasError(false);
+  };
+
+  const handleError = () => {
+    setHasError(true);
+    setIsLoaded(true);
+  };
 
   return (
     <div className={`relative overflow-hidden ${className}`}>
@@ -73,18 +64,18 @@ export default function OptimizedImage({
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-shimmer" />
         </div>
       )}
-      {imageSrc && (
-        <img
-          ref={imgRef}
-          src={imageSrc}
-          alt={alt}
-          className={`w-full h-full object-cover transition-all duration-500 ${isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-105'}`}
-          loading={priority ? 'eager' : loading}
-          decoding="async"
-          sizes={sizes}
-          fetchPriority={priority ? 'high' : 'auto'}
-        />
-      )}
+      <img
+        ref={imgRef}
+        src={hasError ? getAssetPath(placeholder) : finalSrc}
+        alt={alt}
+        className={`w-full h-full object-cover transition-all duration-500 ${isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-105'}`}
+        loading={priority ? 'eager' : loading}
+        decoding="async"
+        sizes={sizes}
+        fetchPriority={priority ? 'high' : 'auto'}
+        onLoad={handleLoad}
+        onError={handleError}
+      />
       {hasError && (
         <div className="absolute inset-0 flex items-center justify-center bg-gray-100 text-gray-400 text-sm">
           Image unavailable

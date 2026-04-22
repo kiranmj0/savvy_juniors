@@ -33,7 +33,7 @@ export default function About() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch mb-8">
               <div className="order-2 lg:order-1 px-4 sm:px-0">
                 <img
-                  src={getAssetPath("AboutUScreenPic.png")}
+                  src={getAssetPath("AboutUScreenPic.webp")}
                   alt="About Savvy Juniors"
                   className="relative w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1"
                 />
@@ -43,7 +43,7 @@ export default function About() {
                 <p>
                   At Savvy Juniors, childhood is honoured. Curiosity is encouraged. Independence is nurtured. And every milestone—big or small—is treasured.
                 </p><p>
-                  Savvy Juniors Early Childhood Centre opens early 2026, bringing a fresh, research-led, and child-centred early years experience to families in the UAE. We welcome children from 45 days to 5 years, offering a warm, nurturing environment where every child is valued, understood, and celebrated.
+                  Savvy Juniors Early Childhood Centre Now Open! Savvy Juniors Nursery is ready to welcome your little ones from February 2026, bringing a fresh, research-led, and child-centred early years experience to families in the UAE. We welcome children from 45 days to 5 years, offering a warm, nurturing environment where every child is valued, understood, and celebrated.
                 </p>
                 <p>
                   Our approach blends the British curriculum alongside Montessori approach, enriched by the latest insights in early childhood neuroscience. This ensures that children experience learning that is child-led, purposeful, and deeply connected to the way young brains naturally grow.

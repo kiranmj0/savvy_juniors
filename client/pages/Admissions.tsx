@@ -73,7 +73,7 @@ const Admissions = () => {
             </div>
             <div>
               <img
-                src={getAssetPath("AdmissionScreenPic.png")}
+                src={getAssetPath("AdmissionScreenPic.webp")}
                 alt="Admissions at Savvy Juniors"
                 className="relative w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1"
               />

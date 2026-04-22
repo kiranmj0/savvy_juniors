@@ -244,7 +244,7 @@ export default function Home() {
                   {/* <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-700 font-medium">Nursery & Early Years</span> */}
                 </h1>
                 <p className="text-lg text-gray-600 max-w-xl leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-                  Where childhood is honoured and every milestone is treasured. <span className="font-semibold text-primary">Opening soon in 2026</span> in Dubai Sports Village.
+                  Where childhood is honoured and every milestone is treasured. <span className="font-semibold text-primary">Now Open! Savvy Juniors Nursery is ready to welcome your little ones from February 2026</span> in Dubai Sports Village.
                 </p>
               </div>
 
@@ -289,7 +289,7 @@ export default function Home() {
               <div className="lg:mb-0 mb-12 relative h-64 sm:h-80 md:h-96 bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 group">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
                 <OptimizedImage
-                  src="HomePic.png"
+                  src="HomePic.webp"
                   alt="Children engaged in learning activities at Savvy Juniors nursery"
                   className="absolute inset-0 w-full h-full object-cover"
                   priority={true}
@@ -329,7 +329,7 @@ export default function Home() {
               <div className="absolute -inset-4 bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl animate-pulse-gentle"></div>
               <div className="absolute top-4 right-4 w-4 h-4 bg-accent rounded-full animate-ping"></div>
               <OptimizedImage
-                src="AboutUs.png"
+                src="AboutUs.webp"
                 alt="Children engaged in Montessori learning activities at Savvy Juniors"
                 className="relative w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1"
                 priority={true}
@@ -360,7 +360,7 @@ export default function Home() {
                   At Savvy Juniors, childhood is honoured. Curiosity is encouraged. Independence is nurtured. And every milestone—big or small—is treasured.
                 </p>
                 <p className="text-white text-lg font-medium animate-fade-in-up drop-shadow-sm" style={{ animationDelay: '0.8s' }}>
-                  Savvy Juniors Early Childhood Centre opens January 2026, bringing a fresh, research-led, and child-centred early years experience to families in the UAE. We welcome children from 45 days to 5 years in a warm, nurturing environment.
+                  Savvy Juniors Early Childhood Centre Now Open! Savvy Juniors Nursery is ready to welcome your little ones from February 2026, bringing a fresh, research-led, and child-centred early years experience to families in the UAE. We welcome children from 45 days to 5 years in a warm, nurturing environment.
                 </p>
               </div>
 
@@ -428,7 +428,7 @@ export default function Home() {
               <div className="relative group mb-12">
                 <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <OptimizedImage
-                  src="programsPic.png"
+                  src="programsPic.webp"
                   alt="Montessori-inspired learning environment and age-appropriate programs"
                   className="relative w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1"
                   loading="lazy"
@@ -506,7 +506,7 @@ export default function Home() {
               <div className="relative group">
                 <div className="absolute -inset-4 bg-gradient-to-r from-accent/30 to-white/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <OptimizedImage
-                  src="contactPic.png"
+                  src="contactPic.webp"
                   alt="Welcoming environment for families at Savvy Juniors nursery"
                   className="relative w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-rotate-1"
                   loading="lazy"
@@ -535,7 +535,7 @@ export default function Home() {
                 <div className="absolute -inset-3 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="absolute top-4 left-4 w-4 h-4 bg-primary rounded-full animate-ping"></div>
                 <OptimizedImage
-                  src="AdmissionPic.png"
+                  src="AdmissionPic.webp"
                   alt="Admissions process and onboarding at Savvy Juniors nursery"
                   className="relative w-full h-48 sm:h-56 md:h-96 lg:h-80 xl:h-96 object-cover rounded-lg shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:rotate-1"
                   loading="lazy"
